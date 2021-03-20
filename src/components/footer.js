@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer(){
     return(
-        <section>
-
+        <section id="footer">
+            <p>&copy; Joshua Jacob Mauricio</p>
         </section>
     );
 }
