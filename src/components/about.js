@@ -11,7 +11,7 @@ function About() {
             <img src={pic} id="about-pic" alt="At Knott's Berry Farm" />
           </Col>
           <Col md={7}>
-            <p id="about-desc">
+            <p id="about-desc" className="text-white">
               <b>Greetings!</b> My name is Joshua Jacob Mauricio, but you may call me
               Josh 😊 I am a 2020 computer science graduate from Western Oregon
               University and an aspiring software developer. I am expereinced in

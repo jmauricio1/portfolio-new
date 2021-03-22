@@ -1,10 +1,11 @@
 import React from "react";
 import astronomical from "./../images/astronomical-img.jpg";
+import portfolioImg from './../images/online-portfolio-img.png';
 import { Container, Row, Col } from "react-bootstrap";
 
 function Projects() {
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding text-white">
       <Container>
         <h2 id="projects-title">Projects</h2>
         <Row md={3}>
@@ -25,9 +26,9 @@ function Projects() {
           </Col>
           <Col>
             <img
-              src={astronomical}
+              src={portfolioImg}
               className="projects-img"
-              alt="Astronomical Learning Home Page"
+              alt="Online Portfolio Home Page"
             />
             <h4>Online Portfolio</h4>
             <p>

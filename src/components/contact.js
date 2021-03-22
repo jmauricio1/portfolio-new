@@ -4,7 +4,6 @@ import {
   Container,
   Form,
   FormControl,
-  InputGroup,
 } from "react-bootstrap";
 
 function Contact() {
@@ -12,7 +11,7 @@ function Contact() {
     <section id="contact" className="section-padding">
       <Container>
         <h2>Let's Chat!</h2>
-        <p>Feel free to contact me and we can converse some time.</p>
+        <p>Feel free to contact me and we can converse some time 🐱‍🏍</p>
         <Form>
           <Form.Group>
             <Form.Control type="text" placeholder="Your Name" />

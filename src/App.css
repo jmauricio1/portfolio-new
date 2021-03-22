@@ -1,182 +1,213 @@
 /* Apply to more than one*/
 
-body{
-    text-align: center;
-    font-family: "Montserrat";
+body {
+  text-align: center;
+  font-family: "Montserrat";
+  width: 100%;
 }
 
-.full-height{
-    height: 100vh;
+.section-padding {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.section-padding{
-    padding-top: 5%;
-    padding-bottom: 5%;
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-h2{
-    font-weight: 700;
-    font-size: 3rem;
+h3,
+h4 {
+  font-weight: 500;
 }
 
-h3{
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-}
-
-h4{
-    font-weight: 500;
-    padding-top: 3rem;
+.l-blue {
+  background-color: #e8ffff;
 }
 
 /* Header Section */
 
-#header{
-    background-color: #E8FFFF;
+.navbar {
+  box-shadow: 0 -5px 20px gray;
 }
 
-.navbar{
-    background-color: #E8FFFF;
-    box-shadow: 0 -5px 20px gray;
+.navbar-brand {
+  font-family: "Sacramento";
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-.navbar-brand{
-    font-family: "Sacramento";
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.nav-link{
-    font-family: "Josefin Sans";
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin: 0 10px;
+.nav-link {
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 10px;
 }
 
 /* Title Section */
 
-#title{
-    background-color: #E8FFFF;
-    padding-top: 25vh;
-    padding-bottom: 32vh;
+#title {
+  padding-top: 25vh;
+  padding-bottom: 32vh;
 }
 
-#title-name{
-    font-family: "Sacramento";
-    font-size: 8rem;
-    padding-top: 10%;
-    position: relative;
+#title-name {
+  font-family: "Sacramento";
+  font-size: 8rem;
+  padding-top: 10%;
+  position: relative;
 }
 
-#title-desc{
-    font-family: "Josefin Sans";
-    font-size: 3rem;
-    font-weight: 300;
+#title-desc {
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  font-weight: 300;
 }
 
-.fa-arrow-circle-down{
-    font-size: 3rem;
-    position: relative;
-    top: 10vh;
-    transition: 0.25s;
-    color: black;
+.fa-arrow-circle-down {
+  font-size: 3rem;
+  position: relative;
+  top: 10vh;
+  transition: 0.25s;
+  color: black;
 }
 
-.fa-arrow-circle-down:hover{
-    color: #ffc354;
+.fa-arrow-circle-down:hover {
+  color: #ffc354;
 }
 
 /* About Section */
 
-#about{
-    background-color: #2892D7;
+#about {
+  background-color: #2892d7;
 }
 
-#about-pic{
-    border-radius: 50%;
-    width: 50%;
-    position: absolute;
-    right: 0px;
+#about-pic {
+  border-radius: 50%;
+  width: 50%;
+  position: absolute;
+  right: 0px;
 }
 
-#about-desc{
-    color: white;
-    text-align: left;
-    padding-top: 6%;
-    padding-left: 2rem;
-    width: 60ch;
+#about-desc {
+  text-align: left;
+  padding-top: 6%;
+  padding-left: 2rem;
 }
 
 /* Skills Section */
 
-#skills .container-fluid{
-    padding-left: 15%;
-    padding-right: 15%;
+#skills .container-fluid {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.svg-icon{
-    width: 75px;
+#skills h3 {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.svg-icon {
+  width: 75px;
 }
 
 /* Projects Section  */
-#projects{
-    background-color: #1D70A2;
-    color: white;
+#projects {
+  background-color: #1d70a2;
 }
 
-#projects-title{
-    padding-bottom: 3rem;
+#projects-title {
+  padding-bottom: 3rem;
 }
 
-.projects-img{
-    width: 340px;
+#projects h4 {
+  padding-top: 3rem;
 }
 
-#projects p{
-    text-align: left;
+.projects-img {
+  width: 340px;
+  border-radius: 10px;
+}
+
+#projects p {
+  text-align: left;
 }
 
 /* Contact Section  */
 
-#contact p{
-    margin: 1rem 0 2rem 0; 
+#contact p {
+  margin: 1rem 0 2rem 0;
 }
 
-form{
-    max-width: 40%;
-    margin: auto;
+form {
+  max-width: 50%;
+  margin: auto;
 }
 
-.form-control{
-    text-align: center;
+.form-control {
+  text-align: center;
 }
 
 /* Footer Section  */
 
-#footer{
-    padding-top: 2%;
-    padding-bottom: 1%;
-    background-color: #173753;
-    color: white;
-    text-align: center;
+#footer {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: #173753;
+  text-align: center;
 }
 
-#footer a{
-    color: white;
+#footer a {
+  color: white;
 }
 
-#footer a:hover{
-    color: #2892D7;
+#footer a:hover {
+  color: #2892d7;
 }
 
-.fab{
-    font-size: 2rem;
-    margin: 0 1rem 2rem 1rem;
-    transition: 0.25s;
+.fab {
+  font-size: 2rem;
+  margin: 0 1rem 2rem 1rem;
+  transition: 0.25s;
 }
 
-.fab:hover{
-    color: #2892D7; 
+.fab:hover {
+  color: #2892d7;
+}
+
+/* Mobile View */
+
+@media (max-width: 480px) {
+    .section-padding{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+  #title {
+    height: 100vh;
+  }
+
+  #title-name {
+    font-size: 3.5rem;
+  }
+
+  #title-desc {
+    font-size: 1.75rem;
+  }
+
+  #about-pic {
+    position: relative;
+  }
+
+  #projects h4{
+      padding-top: 2rem;
+  }
+
+  #projects p{
+      padding-bottom: 20%;
+  }
+
+  form{
+      max-width: 100%;
+  }
 }
