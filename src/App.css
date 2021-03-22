@@ -199,6 +199,14 @@ form {
     position: relative;
   }
 
+  #about-desc{
+      padding-left: 0;
+  }
+
+  #skills h3{
+      margin-top: 1rem;
+  }
+
   #projects h4{
       padding-top: 2rem;
   }
@@ -207,7 +215,21 @@ form {
       padding-bottom: 20%;
   }
 
+  #projects{
+      padding-bottom: 0;
+  }
+  
+
   form{
       max-width: 100%;
+  }
+
+  #footer{
+      padding-top: 1rem;
+  }
+
+  .fab{
+      font-size: 2rem;
+      margin-bottom: 1rem;
   }
 }
