@@ -84,9 +84,9 @@ h4 {
 
 #about-pic {
   border-radius: 50%;
-  width: 50%;
-  position: absolute;
-  right: 0px;
+  width: 75%;
+  right: 0;
+  margin: auto;
 }
 
 #about-desc {
@@ -175,6 +175,20 @@ form {
   color: #2892d7;
 }
 
+@media (max-width: 768px){
+    #title{
+        height: 100vh;
+    }
+
+    #title-name{
+        font-size: 6rem;
+    }
+
+    #about-desc{
+        padding: 1rem 0;
+    }
+}
+
 /* Mobile View */
 
 @media (max-width: 480px) {
@@ -200,6 +214,7 @@ form {
   }
 
   #about-desc{
+      padding-top: 6%;
       padding-left: 0;
   }
 

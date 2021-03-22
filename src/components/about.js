@@ -7,7 +7,7 @@ function About() {
     <section id="about" className="section-padding">
       <Container>
         <Row>
-          <Col md={5}>
+          <Col md={4}>
             <img src={pic} id="about-pic" alt="At Knott's Berry Farm" />
           </Col>
           <Col md={7}>

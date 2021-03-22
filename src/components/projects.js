@@ -8,7 +8,7 @@ function Projects() {
     <section id="projects" className="section-padding text-white">
       <Container>
         <h2 id="projects-title">Projects</h2>
-        <Row md={3}>
+        <Row>
           <Col>
             <img
               src={astronomical}
