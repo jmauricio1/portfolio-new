@@ -6,8 +6,8 @@ import {Container} from 'react-bootstrap';
 
 function Skills() {
   return (
-    <section id="skills" className="full-height">
-      <Container fluid>
+    <section id="skills" className="section-padding">
+      <Container>
         <h2>Skills</h2>
         <h3>Languages</h3>
         <LangauageIcons />

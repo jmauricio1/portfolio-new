@@ -5,7 +5,7 @@ function Footer() {
   return (
     <section id="footer">
       <Container>
-      <i class="fab fa-linkedin"></i><i class="fab fa-github"></i><i class="fab fa-instagram-square"></i>
+      <a href="https://www.linkedin.com/in/joshuajacobmauricio/"><i class="fab fa-linkedin"></i></a><a href="https://github.com/jmauricio1"><i class="fab fa-github"></i></a><a href="https://www.instagram.com/josh.log/"><i class="fab fa-instagram-square"></i></a>
         <p>&copy; Joshua Jacob Mauricio</p>
       </Container>
     </section>

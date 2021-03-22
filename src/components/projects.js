@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Projects() {
   return (
-    <section id="projects" className="full-height">
+    <section id="projects" className="section-padding">
       <Container>
         <h2 id="projects-title">Projects</h2>
         <Row md={3}>

@@ -3,11 +3,11 @@ import {Container} from 'react-bootstrap'
 
 function Title(){
     return(
-        <section id="title" className="full-height">
-            <Container fluid>
+        <section id="title">
+            <Container>
                 <h1 id="title-name">Hello, I'm Josh!</h1>
                 <p id="title-desc">A Software Developer</p>
-                <i class="fas fa-arrow-circle-down"></i>
+                <a href="#about"><i class="fas fa-arrow-circle-down"></i></a>
             </Container>
         </section>
     );

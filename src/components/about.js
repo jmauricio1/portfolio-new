@@ -4,8 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function About() {
   return (
-    <section id="about" className="full-height">
-      <Container fluid>
+    <section id="about" className="section-padding">
+      <Container>
         <Row>
           <Col md={5}>
             <img src={pic} id="about-pic" alt="At Knott's Berry Farm" />

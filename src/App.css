@@ -5,15 +5,13 @@ body{
     font-family: "Montserrat";
 }
 
-.container-fluid{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
 .full-height{
     height: 100vh;
+}
+
+.section-padding{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 h2{
@@ -36,9 +34,12 @@ h4{
 /* Header Section */
 
 #header{
-    position: relative;
-    z-index: 1;
     background-color: #E8FFFF;
+}
+
+.navbar{
+    background-color: #E8FFFF;
+    box-shadow: 0 -5px 20px gray;
 }
 
 .navbar-brand{
@@ -58,7 +59,8 @@ h4{
 
 #title{
     background-color: #E8FFFF;
-    position: relative;
+    padding-top: 25vh;
+    padding-bottom: 32vh;
 }
 
 #title-name{
@@ -75,28 +77,26 @@ h4{
 }
 
 .fa-arrow-circle-down{
-    bottom: 0;
     font-size: 3rem;
     position: relative;
+    top: 10vh;
     transition: 0.25s;
-    outline-color: black;
-    outline-width: 3px;
+    color: black;
 }
 
 .fa-arrow-circle-down:hover{
-    color: white;
+    color: #ffc354;
 }
 
 /* About Section */
 
 #about{
-    background-color: #41AEA9;
-    padding-top: 10%;
+    background-color: #2892D7;
 }
 
 #about-pic{
     border-radius: 50%;
-    width: 300px;
+    width: 50%;
     position: absolute;
     right: 0px;
 }
@@ -122,8 +122,8 @@ h4{
 
 /* Projects Section  */
 #projects{
-    background-color: #A6F6F1;
-    padding-top: 5%;
+    background-color: #1D70A2;
+    color: white;
 }
 
 #projects-title{
@@ -136,15 +136,9 @@ h4{
 
 #projects p{
     text-align: left;
-    width: 300px;
 }
 
 /* Contact Section  */
-
-#contact{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
 
 #contact p{
     margin: 1rem 0 2rem 0; 
@@ -164,12 +158,25 @@ form{
 #footer{
     padding-top: 2%;
     padding-bottom: 1%;
-    background-color: #213E3B;
+    background-color: #173753;
     color: white;
     text-align: center;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    color: #2892D7;
 }
 
 .fab{
     font-size: 2rem;
     margin: 0 1rem 2rem 1rem;
+    transition: 0.25s;
+}
+
+.fab:hover{
+    color: #2892D7; 
 }

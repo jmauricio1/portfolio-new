@@ -9,7 +9,7 @@ import {
 
 function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="section-padding">
       <Container>
         <h2>Let's Chat!</h2>
         <p>Feel free to contact me and we can converse some time.</p>
