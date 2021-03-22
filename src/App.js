@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/header';
 import Title from './components/title';
@@ -9,7 +10,7 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Title />
       <About />

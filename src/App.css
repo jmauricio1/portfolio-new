@@ -1,17 +1,175 @@
+/* Apply to more than one*/
+
+body{
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.container-fluid{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+h4{
+    font-weight: 500;
+    padding-top: 3rem;
+}
+
 /* Header Section */
+
+#header{
+    position: relative;
+    z-index: 1;
+    background-color: #E8FFFF;
+}
+
+.navbar-brand{
+    font-family: "Sacramento";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-family: "Josefin Sans";
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
 
 /* Title Section */
 
+#title{
+    background-color: #E8FFFF;
+    position: relative;
+}
+
+#title-name{
+    font-family: "Sacramento";
+    font-size: 8rem;
+    padding-top: 10%;
+    position: relative;
+}
+
+#title-desc{
+    font-family: "Josefin Sans";
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.fa-arrow-circle-down{
+    bottom: 0;
+    font-size: 3rem;
+    position: relative;
+    transition: 0.25s;
+    outline-color: black;
+    outline-width: 3px;
+}
+
+.fa-arrow-circle-down:hover{
+    color: white;
+}
+
 /* About Section */
 
+#about{
+    background-color: #41AEA9;
+    padding-top: 10%;
+}
+
 #about-pic{
+    border-radius: 50%;
     width: 300px;
+    position: absolute;
+    right: 0px;
+}
+
+#about-desc{
+    color: white;
+    text-align: left;
+    padding-top: 6%;
+    padding-left: 2rem;
+    width: 60ch;
 }
 
 /* Skills Section */
 
-/* Projects Section  */
+#skills .container-fluid{
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
-/* Contect Section  */
+.svg-icon{
+    width: 75px;
+}
+
+/* Projects Section  */
+#projects{
+    background-color: #A6F6F1;
+    padding-top: 5%;
+}
+
+#projects-title{
+    padding-bottom: 3rem;
+}
+
+.projects-img{
+    width: 340px;
+}
+
+#projects p{
+    text-align: left;
+    width: 300px;
+}
+
+/* Contact Section  */
+
+#contact{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#contact p{
+    margin: 1rem 0 2rem 0; 
+}
+
+form{
+    max-width: 40%;
+    margin: auto;
+}
+
+.form-control{
+    text-align: center;
+}
 
 /* Footer Section  */
+
+#footer{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: #213E3B;
+    color: white;
+    text-align: center;
+}
+
+.fab{
+    font-size: 2rem;
+    margin: 0 1rem 2rem 1rem;
+}
