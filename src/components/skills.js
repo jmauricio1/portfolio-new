@@ -6,7 +6,7 @@ import {Container} from 'react-bootstrap';
 
 function Skills() {
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding l-blue">
       <Container>
         <h2>Skills</h2>
         <h3>Languages</h3>
