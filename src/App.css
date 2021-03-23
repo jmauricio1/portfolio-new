@@ -2,13 +2,23 @@
 
 body {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Josefin Sans";
   width: 100%;
+  background-color: #e8ffff;
 }
 
 .section-padding {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans";
 }
 
 h2 {
@@ -19,6 +29,18 @@ h2 {
 h3,
 h4 {
   font-weight: 500;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+hr {
+  width: 10%;
+  border-top-style: dotted;
+  border-width: 1rem;
 }
 
 .l-blue {
@@ -69,17 +91,18 @@ h4 {
   position: relative;
   top: 10vh;
   transition: 0.25s;
-  color: black;
+  color: #00a3b5;
 }
 
 .fa-arrow-circle-down:hover {
-  color: #ffc354;
+  color: #ffa600;
+  font-size: 3.5rem;
 }
 
 /* About Section */
 
-#about {
-  background-color: #2892d7;
+#about-row-1 {
+  padding-bottom: 5%;
 }
 
 #about-pic {
@@ -89,10 +112,19 @@ h4 {
   margin: auto;
 }
 
-#about-desc {
+.about-desc {
   text-align: left;
-  padding-top: 6%;
+}
+
+#about-desc-1 {
   padding-left: 2rem;
+}
+
+.about-icon {
+  font-size: 8rem;
+  position: relative;
+  margin: auto;
+  padding-top: 10%;
 }
 
 /* Skills Section */
@@ -102,9 +134,21 @@ h4 {
   padding-right: 15%;
 }
 
+#skills-row-1 {
+  padding-bottom: 5%;
+}
+
 #skills h3 {
-  margin-bottom: 2rem;
-  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: right;
+  vertical-align: middle;
+}
+
+#skills-desc {
+  width: 60ch;
+  margin: auto;
+  padding-bottom: 3rem;
 }
 
 .svg-icon {
@@ -112,9 +156,6 @@ h4 {
 }
 
 /* Projects Section  */
-#projects {
-  background-color: #1d70a2;
-}
 
 #projects-title {
   padding-bottom: 3rem;
@@ -142,6 +183,14 @@ h4 {
 form {
   max-width: 50%;
   margin: auto;
+}
+
+#contact input {
+  border: none;
+}
+
+#contact textarea {
+  border: none;
 }
 
 .form-control {
@@ -175,27 +224,27 @@ form {
   color: #2892d7;
 }
 
-@media (max-width: 768px){
-    #title{
-        height: 100vh;
-    }
+@media (max-width: 768px) {
+  #title {
+    height: 100vh;
+  }
 
-    #title-name{
-        font-size: 6rem;
-    }
+  #title-name {
+    font-size: 6rem;
+  }
 
-    #about-desc{
-        padding: 1rem 0;
-    }
+  #about-desc {
+    padding: 1rem 0;
+  }
 }
 
 /* Mobile View */
 
 @media (max-width: 480px) {
-    .section-padding{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
+  .section-padding {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 
   #title {
     height: 100vh;
@@ -213,38 +262,37 @@ form {
     position: relative;
   }
 
-  #about-desc{
-      padding-top: 6%;
-      padding-left: 0;
+  #about-desc {
+    padding-top: 6%;
+    padding-left: 0;
   }
 
-  #skills h3{
-      margin-top: 1rem;
+  #skills h3 {
+    margin-top: 1rem;
   }
 
-  #projects h4{
-      padding-top: 2rem;
+  #projects h4 {
+    padding-top: 2rem;
   }
 
-  #projects p{
-      padding-bottom: 20%;
+  #projects p {
+    padding-bottom: 20%;
   }
 
-  #projects{
-      padding-bottom: 0;
-  }
-  
-
-  form{
-      max-width: 100%;
+  #projects {
+    padding-bottom: 0;
   }
 
-  #footer{
-      padding-top: 1rem;
+  form {
+    max-width: 100%;
   }
 
-  .fab{
-      font-size: 2rem;
-      margin-bottom: 1rem;
+  #footer {
+    padding-top: 1rem;
+  }
+
+  .fab {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }

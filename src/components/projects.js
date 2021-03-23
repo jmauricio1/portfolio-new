@@ -1,17 +1,17 @@
 import React from "react";
-import astronomical from "./../images/astronomical-img.jpg";
-import portfolioImg from './../images/online-portfolio-img.png';
+import portfolioImg from './../images/online-porfolio.png';
 import { Container, Row, Col } from "react-bootstrap";
+import aslMac from './../images/mac-al.png';
 
 function Projects() {
   return (
-    <section id="projects" className="section-padding text-white">
+    <section id="projects" className="section-padding">
       <Container>
         <h2 id="projects-title">Projects</h2>
         <Row>
           <Col>
-            <img
-              src={astronomical}
+          <img
+              src={aslMac}
               className="projects-img"
               alt="Astronomical Learning Home Page"
             />
@@ -40,7 +40,7 @@ function Projects() {
           </Col>
           <Col>
             <img
-              src={astronomical}
+              src={aslMac}
               className="projects-img"
               alt="Astronomical Learning Home Page"
             />
