@@ -17,6 +17,9 @@ function Contact() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+
+    setSentEmail(false);
+
     setParams((previousValues) => {
       return {
         ...previousValues,
@@ -88,7 +91,7 @@ function Contact() {
               value={contactParams.message}
             />
           </Form.Group>
-          <Button className={(sentEmail) ? "btn-large btn-success" : "btn-lg submit-button"} onClick={handleContactSubmit}>
+          <Button className={(sentEmail) ? "btn-lg btn-success" : "btn-lg submit-button"} onClick={handleContactSubmit}>
             Send &#10148;
           </Button>
         </Form>
