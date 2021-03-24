@@ -4,11 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import aslMac from "./../images/mac-al.png";
 import macVotre from "./../images/mac-votre.png";
 
+import Fade from 'react-reveal/Fade';
+
 function Projects() {
   return (
     <section id="projects" className="section-padding">
       <Container>
+        <Fade bottom>
         <h2 id="projects-title">Projects</h2>
+        </Fade>
         <Row>
           <Col>
             <img

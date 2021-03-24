@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container, Form, FormControl } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import Fade from 'react-reveal/Fade';
 
 const serviceID = process.env.REACT_APP_SERVICE_ID;
 const templateID = process.env.REACT_APP_TEMPLATE_ID;
@@ -29,34 +30,29 @@ function Contact() {
   }
 
   function handleContactSubmit(e) {
-    emailjs
-      .send(
-        serviceID,
-        templateID,
-        contactParams,
-        userID
-      )
-      .then(
-        (response) => {
-          setSentEmail(true);
-          setParams({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+    emailjs.send(serviceID, templateID, contactParams, userID).then(
+      (response) => {
+        setSentEmail(true);
+        setParams({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (err) => {
+        console.log("FAILED...", err);
+      }
+    );
     e.preventDefault();
   }
 
   return (
     <section id="contact" className="section-padding l-blue">
       <Container>
-        <h2>Let's Chat!</h2>
-        <p>Feel free to contact me and we can converse some time 🐱‍🏍</p>
+        <Fade bottom>
+          <h2>Let's Chat!</h2>
+          <p>Feel free to contact me and we can converse some time 🐱‍🏍</p>
+        </Fade>
         <Form>
           <Form.Group>
             <Form.Control
@@ -91,7 +87,12 @@ function Contact() {
               value={contactParams.message}
             />
           </Form.Group>
-          <Button className={(sentEmail) ? "btn-lg btn-success" : "btn-lg submit-button"} onClick={handleContactSubmit}>
+          <Button
+            className={
+              sentEmail ? "btn-lg btn-success" : "btn-lg submit-button"
+            }
+            onClick={handleContactSubmit}
+          >
             Send &#10148;
           </Button>
         </Form>
