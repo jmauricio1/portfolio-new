@@ -30,7 +30,7 @@ function LangauageIcons() {
         <p>C Plus Plus</p>
       </Col>
       <Col>
-        <img src={SQL} className="svg-icon" id="sql-icon"/>
+        <img src={SQL} alt="SQL" className="svg-icon" id="sql-icon"/>
         <br />
         <p>SQL</p>
       </Col>

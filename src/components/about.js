@@ -1,5 +1,4 @@
 import React from "react";
-import pic from "./../images/portfolio-pic.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
 function About() {
@@ -27,7 +26,7 @@ function About() {
         </Row>
         <Row>
           <Col md={1}></Col>
-          <Col md={8} xs={{order: 'last'}}>
+          <Col md={8}>
             <p id="about-desc-2" className="about-desc">
               Outside of coding, I like to be creative and express myself in
               other forms. I like listening to a lot of music, especially vinyl
@@ -35,7 +34,7 @@ function About() {
               my time enjoy some of my time with nature.
             </p>
           </Col>
-          <Col md={2} xs={{order: 'first'}}>
+          <Col md={2}>
             <i className="fas fa-icons about-icon"></i>
           </Col>
           <Col md={1}></Col>

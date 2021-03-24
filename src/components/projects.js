@@ -1,7 +1,8 @@
 import React from "react";
-import portfolioImg from './../images/online-porfolio.png';
+import portfolioImg from "./../images/online-porfolio.png";
 import { Container, Row, Col } from "react-bootstrap";
-import aslMac from './../images/mac-al.png';
+import aslMac from "./../images/mac-al.png";
+import macVotre from "./../images/mac-votre.png";
 
 function Projects() {
   return (
@@ -10,7 +11,7 @@ function Projects() {
         <h2 id="projects-title">Projects</h2>
         <Row>
           <Col>
-          <img
+            <img
               src={aslMac}
               className="projects-img"
               alt="Astronomical Learning Home Page"
@@ -18,10 +19,10 @@ function Projects() {
             <h4>Astronomical Learning</h4>
             <p>
               Used Agile/Scrum development methods to design and create an
-              application that provides information regarding space and space travel.
-              Contributed to backlog refinement, sprints (planning, reviews,
-              retrospectives), and was also responsible for our Git repository,
-              SendGrid implmentation, and CI/CD with Azure.
+              application that provides information regarding space and space
+              travel. Contributed to backlog refinement, sprints (planning,
+              reviews, retrospectives), and was also responsible for our Git
+              repository, SendGrid implmentation, and CI/CD with Azure.
             </p>
           </Col>
           <Col>
@@ -32,24 +33,26 @@ function Projects() {
             />
             <h4>Online Portfolio</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse in est ante. Non
-              sodales neque sodales ut etiam sit.
+              This is my online portfolio. I coded this using React.js as my
+              front-end framework along with basic HTML/JSX and CSS. For the
+              functionality of the contact form, I used Email.js to run that
+              feature.
             </p>
           </Col>
           <Col>
             <img
-              src={aslMac}
+              src={macVotre}
               className="projects-img"
               alt="Astronomical Learning Home Page"
             />
             <h4>Votre Nome</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse in est ante. Non
-              sodales neque sodales ut etiam sit.
+              This project is <b>still in progress.</b> A lot of people have the
+              same names, but they all are different characters. In this web
+              application, we gathered data from random people to see how they
+              would describe someone with a particular name. We used MongoDB to
+              hold our survey data, Express.js, Node.js, and React.js as our
+              front-end framework.
             </p>
           </Col>
         </Row>

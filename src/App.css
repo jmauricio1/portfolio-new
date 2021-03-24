@@ -236,6 +236,12 @@ form {
   color: #2892d7;
 }
 
+@media (max-width: 1199px){
+  #projects p{
+    padding-bottom: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   #title {
     height: 100vh;
@@ -249,6 +255,11 @@ form {
     padding-top: 1rem;
   }
 
+  .about-icon{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
   #about-desc-1{
     padding-left: 0;
   }
@@ -259,6 +270,10 @@ form {
 
   #skills-desc{
     width: 100%;
+  }
+
+  form {
+    max-width: 100%;
   }
 }
 

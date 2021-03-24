@@ -78,12 +78,12 @@ function TechnologiesIcons() {
         <p>Node Package Manager</p>
       </Col>
       <Col>
-      <img src={ReactIcon} className="svg-icon"/>
+      <img src={ReactIcon} alt="React" className="svg-icon"/>
         <br />
         <p>React</p>
       </Col>
       <Col>
-      <img src={ASP} className="svg-icon"/>
+      <img src={ASP} alt="ASP" className="svg-icon"/>
         <br />
         <p>ASP</p>
       </Col>
