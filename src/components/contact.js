@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { Button, Container, Form, FormControl } from "react-bootstrap";
+import emailjs from "emailjs-com";
+
+require('dotenv');
 
 function Contact() {
+  const [sentEmail, setSentEmail] = useState(false);
+
   const [contactParams, setParams] = useState({
     name: "",
     email: "",
@@ -19,12 +24,23 @@ function Contact() {
   }
 
   function handleContactSubmit(e) {
-    console.log(`Final Params: \n ${contactParams.name} \n ${contactParams.email} \n ${contactParams.message}`);
-    setParams({
-      name: "",
-      email: "",
-      message: ""
-    });
+    emailjs
+      .send(
+        contactParams,
+      )
+      .then(
+        (response) => {
+          setSentEmail(true);
+          setParams({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
     e.preventDefault();
   }
 
@@ -40,6 +56,7 @@ function Contact() {
               type="text"
               onChange={handleInputChange}
               placeholder="Your Name"
+              value={contactParams.name}
             />
           </Form.Group>
 
@@ -49,6 +66,7 @@ function Contact() {
               onChange={handleInputChange}
               name="email"
               placeholder="Your Email"
+              value={contactParams.email}
             />
             <Form.Text className="text-muted">
               Don't worry, I won't do anything sketchy with your email.
@@ -62,9 +80,12 @@ function Contact() {
               name="message"
               placeholder="Your Message..."
               rows={8}
+              value={contactParams.message}
             />
           </Form.Group>
-          <Button onClick={handleContactSubmit}>Send</Button>
+          <Button className={(sentEmail) ? "btn-large btn-success" : "btn-lg submit-button"} onClick={handleContactSubmit}>
+            Send &#10148;
+          </Button>
         </Form>
       </Container>
     </section>

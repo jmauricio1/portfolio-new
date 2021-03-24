@@ -23,11 +23,11 @@ function About() {
               myself as a developer, team member, and a person.
             </p>
           </Col>
-          <Col md={1}></Col>
+          <Col md={1} sm={0} xs={0}></Col>
         </Row>
         <Row>
           <Col md={1}></Col>
-          <Col md={8}>
+          <Col md={8} xs={{order: 'last'}}>
             <p id="about-desc-2" className="about-desc">
               Outside of coding, I like to be creative and express myself in
               other forms. I like listening to a lot of music, especially vinyl
@@ -35,7 +35,7 @@ function About() {
               my time enjoy some of my time with nature.
             </p>
           </Col>
-          <Col md={2}>
+          <Col md={2} xs={{order: 'first'}}>
             <i className="fas fa-icons about-icon"></i>
           </Col>
           <Col md={1}></Col>

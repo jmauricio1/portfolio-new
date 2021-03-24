@@ -1,5 +1,9 @@
 /* Apply to more than one*/
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-family: "Josefin Sans";
@@ -95,8 +99,7 @@ hr {
 }
 
 .fa-arrow-circle-down:hover {
-  color: #ffa600;
-  font-size: 3.5rem;
+  color: #05525a;
 }
 
 /* About Section */
@@ -197,12 +200,21 @@ form {
   text-align: center;
 }
 
+#contact .submit-button{
+  background-color: #00a3b5;
+  border: none;
+}
+
+#contact .submit-button:hover {
+  background-color: #05525a;
+}
+
 /* Footer Section  */
 
 #footer {
   padding-top: 2%;
   padding-bottom: 1%;
-  background-color: #173753;
+  background-color: #05525a;
   text-align: center;
 }
 
@@ -233,14 +245,31 @@ form {
     font-size: 6rem;
   }
 
-  #about-desc {
-    padding: 1rem 0;
+  .about-desc{
+    padding-top: 1rem;
+  }
+
+  #about-desc-1{
+    padding-left: 0;
+  }
+
+  #skills h3{
+    text-align: center;
+  }
+
+  #skills-desc{
+    width: 100%;
   }
 }
 
 /* Mobile View */
 
 @media (max-width: 480px) {
+
+  .section-title{
+    padding-bottom: 1rem;
+  }
+
   .section-padding {
     padding-top: 20%;
     padding-bottom: 20%;
@@ -258,17 +287,28 @@ form {
     font-size: 1.75rem;
   }
 
-  #about-pic {
-    position: relative;
+  #about-desc-1{
+    padding-left: 0;
   }
 
-  #about-desc {
+  .about-desc {
     padding-top: 6%;
     padding-left: 0;
   }
 
+  .about-icon{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
   #skills h3 {
     margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #skills-desc{
+    width: 100%;
   }
 
   #projects h4 {

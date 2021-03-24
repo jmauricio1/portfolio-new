@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 function Header() {
+
   return (
     <section id="header">
       <Navbar className="l-blue" fixed="top" expand="lg">
