@@ -23,7 +23,7 @@ function About() {
                 <b>Greetings!</b> My name is Joshua Jacob Mauricio, but you may
                 call me Josh 😊 I am a 2020 computer science graduate from
                 Western Oregon University and an aspiring software developer. I
-                am expereinced in full-stack development and enjoy collaborating
+                am experienced in full-stack development and enjoy collaborating
                 with others to reach our shared goals. Individually, I am able
                 to adapt to varying work environments and I am always trying to
                 improve myself as a developer, team member, and a person.
