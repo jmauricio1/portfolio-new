@@ -51,7 +51,7 @@ function Contact() {
       <Container>
         <Fade bottom>
           <h2>Let's Chat!</h2>
-          <p>Feel free to contact me and we can converse some time 🐱‍🏍</p>
+          <p>Feel free to contact me and we can converse some time.</p>
         </Fade>
         <Form>
           <Form.Group>
