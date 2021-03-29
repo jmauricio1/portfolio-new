@@ -3,6 +3,7 @@ import portfolioImg from "./../images/online-porfolio.png";
 import { Container, Row, Col } from "react-bootstrap";
 import aslMac from "./../images/mac-al.png";
 import macVotre from "./../images/mac-votre.png";
+import beatSimple from "./../images/beat-simple.png";
 
 import Fade from "react-reveal/Fade";
 
@@ -44,6 +45,23 @@ function Projects() {
               functionality of the contact form, I used Email.js to run that
               feature.
             </p>
+          </Col>
+          <Col>
+            <img
+              src={beatSimple}
+              className="projects-img"
+              alt="Beat Simple Home"
+            />
+            <h4>Beat Simple</h4>
+            <p>
+              This project is <b>still in progress.</b> For this small project,
+              I decided to upgrade one of the projects I worked on in The
+              Complete 2021 Web Development Bootcamp. Instead of using EJS, I
+              used the React.js framework. Users are able to play a simple beat
+              with the select instruments and sounds that are provided to them
+              on Beat Simple.
+            </p>
+            
           </Col>
           <Col>
             <img
