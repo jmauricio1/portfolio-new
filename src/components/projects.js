@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import aslMac from "./../images/mac-al.png";
 import macVotre from "./../images/mac-votre.png";
 import beatSimple from "./../images/beat-simple.png";
+import bwCollex from "./../images/bwcollex.png";
 
 import Fade from "react-reveal/Fade";
 
@@ -15,6 +16,39 @@ function Projects() {
           <h2 id="projects-title">Projects</h2>
         </Fade>
         <Row>
+          <Col>
+            <a href="https://bwcollex.netlify.app/">
+              <img
+                src={bwCollex}
+                className="projects-img"
+                alt="The Black and White Collection"
+              />
+            </a>
+            <h4>The Black and White Collection</h4>
+            <p>
+              This is a collection and composition of black and white images
+              from various photographers and artists on Unsplash. The purpose of
+              this project was to "play" with composition and modern layouts for
+              a web page. Some things I experimented with is parallax scrolling
+              and positioning of elements using React.js, JavaScript, and CSS.
+            </p>
+          </Col>
+          <Col>
+            <a href="https://joshm-dev.netlify.app/">
+              <img
+                src={portfolioImg}
+                className="projects-img"
+                alt="Online Portfolio Home Page"
+              />
+            </a>
+            <h4>Online Portfolio</h4>
+            <p>
+              This is my online portfolio. I coded this using React.js as my
+              front-end framework along with basic HTML/JSX and CSS. For the
+              functionality of the contact form, I used Email.js to run that
+              feature.
+            </p>
+          </Col>
           <Col>
             <img
               src={aslMac}
@@ -34,20 +68,6 @@ function Projects() {
           </Col>
           <Col>
             <img
-              src={portfolioImg}
-              className="projects-img"
-              alt="Online Portfolio Home Page"
-            />
-            <h4>Online Portfolio</h4>
-            <p>
-              This is my online portfolio. I coded this using React.js as my
-              front-end framework along with basic HTML/JSX and CSS. For the
-              functionality of the contact form, I used Email.js to run that
-              feature.
-            </p>
-          </Col>
-          <Col>
-            <img
               src={beatSimple}
               className="projects-img"
               alt="Beat Simple Home"
@@ -61,7 +81,6 @@ function Projects() {
               with the select instruments and sounds that are provided to them
               on Beat Simple.
             </p>
-            
           </Col>
           <Col>
             <img

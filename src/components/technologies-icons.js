@@ -10,6 +10,7 @@ import {
   Mongodb,
   NodeDotJs,
   Npm,
+  Qt,
   Visualstudiocode,
   Visualstudio,
 } from "@icons-pack/react-simple-icons";
@@ -91,6 +92,11 @@ function TechnologiesIcons() {
       <DotNet color="#512BD4" size={iconSize} />
         <br />
         <p>.NET Framework</p>
+      </Col>
+      <Col>
+      <Qt color="#41CD52" size={iconSize}/>
+      <br />
+      <p>Qt Creator</p>
       </Col>
     </Row>
   );
