@@ -17,7 +17,7 @@ function Projects() {
         </Fade>
         <Row>
           <Col>
-            <a href="https://bwcollex.netlify.app/" rel="external" target="_blank">
+            <a href="https://bwcollex.netlify.app/" rel="noreferrer" target="_blank">
               <img
                 src={bwCollex}
                 className="projects-img"
@@ -34,7 +34,7 @@ function Projects() {
             </p>
           </Col>
           <Col>
-            <a href="https://joshm-dev.netlify.app/" rel="external" target="_blank">
+            <a href="https://joshm-dev.netlify.app/" rel="noreferrer" target="_blank">
               <img
                 src={portfolioImg}
                 className="projects-img"
