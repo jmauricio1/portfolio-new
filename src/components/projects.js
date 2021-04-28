@@ -5,6 +5,7 @@ import aslMac from "./../images/mac-al.png";
 import macVotre from "./../images/mac-votre.png";
 import beatSimple from "./../images/beat-simple.png";
 import bwCollex from "./../images/bwcollex.png";
+import oceandexter from "./../images/oceandexter.png";
 
 import Fade from "react-reveal/Fade";
 
@@ -17,7 +18,28 @@ function Projects() {
         </Fade>
         <Row>
           <Col>
-            <a href="https://bwcollex.netlify.app/" rel="noreferrer" target="_blank">
+            <a href="https://oceananddexterskitchen.netlify.app/" rel="noreferrer" target="_blank">
+              <img
+                src={oceandexter}
+                className="projects-img"
+                alt="Ocean and Dexter's Kitchen"
+              />
+            </a>
+            <h4>Ocean and Dexter's Kitchen</h4>
+            <p>
+              Ocean and Dexter's Kitchen is a website that consists of
+              collections of food video tutorials and recipes featuring Chef
+              Ocean Carlisle and his cat assistant Dexter. The web site was also
+              built using React.js, HTML, CSS, and JavaScript. This project is
+              continuously being worked on has been released.
+            </p>
+          </Col>
+          <Col>
+            <a
+              href="https://bwcollex.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src={bwCollex}
                 className="projects-img"
@@ -34,7 +56,11 @@ function Projects() {
             </p>
           </Col>
           <Col>
-            <a href="https://joshm-dev.netlify.app/" rel="noreferrer" target="_blank">
+            <a
+              href="https://joshm-dev.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src={portfolioImg}
                 className="projects-img"
