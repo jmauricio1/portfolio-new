@@ -1,353 +1,93 @@
-/* Apply to more than one*/
+/*---------- || Apply Globally ----------*/
 
 html{
   scroll-behavior: smooth;
 }
 
-body {
-  text-align: center;
-  font-family: "Josefin Sans";
-  width: 100%;
-  background-color: #e8ffff;
+body{
+  font-family: "Raleway";
 }
 
-.section-padding {
-  padding-top: 5%;
-  padding-bottom: 5%;
+h1{
+  font-size: 199.6pt;
+  font-weight: 600;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Josefin Sans";
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-h3,
-h4 {
+h2{
+  font-size: 123.36pt;
   font-weight: 500;
 }
 
-.section-title {
-  font-size: 3rem;
+h3{
+  font-size: 76.34pt;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 41.89pt;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+p{
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+/*---------- || Home ----------*/
+
+#home{
+  text-align: center;
+  position: relative;
+}
+
+.title{
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  z-index: 1;
+  font-size: 150px;
   margin: 0;
-  padding-bottom: 3rem;
+  pointer-events: none;
 }
 
-hr {
-  width: 10%;
-  border-top-style: dotted;
-  border-width: 1rem;
+.particles-canvas{
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
 }
 
-.l-blue {
-  background-color: #e8ffff;
-}
-
-/* Header Section */
-
-.navbar {
-  box-shadow: 0 -5px 20px gray;
-}
-
-.navbar-brand {
-  font-family: "Sacramento";
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.nav-link {
-  font-family: "Josefin Sans";
-  font-weight: 500;
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
-
-/* Title Section */
-
-#title {
-  padding-top: 25vh;
-  padding-bottom: 32vh;
-}
-
-#title-name {
-  font-family: "Sacramento";
-  font-size: 8rem;
-  padding-top: 10%;
-  position: relative;
-}
-
-#title-desc {
-  font-family: "Josefin Sans";
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-.fa-arrow-circle-down {
-  font-size: 3rem;
-  position: relative;
-  top: 10vh;
-  transition: 0.25s;
-  color: #00a3b5;
-}
-
-.fa-arrow-circle-down:hover {
-  color: #05525a;
-}
-
-/* About Section */
-
-#about-row-1 {
-  padding-bottom: 5%;
-}
-
-#about-pic {
-  border-radius: 50%;
-  width: 75%;
-  right: 0;
-  margin: auto;
-}
-
-.about-desc {
-  text-align: left;
-}
-
-#about-desc-1 {
-  padding-left: 2rem;
-}
-
-.about-icon {
-  font-size: 8rem;
-  position: relative;
-  margin: auto;
-  padding-top: 10%;
-}
-
-/* Skills Section */
-
-#skills .container-fluid {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-#skills-row-1 {
-  padding-bottom: 5%;
-}
-
-#skills h3 {
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  text-align: right;
-  vertical-align: middle;
-}
-
-#skills-desc {
-  width: 60ch;
-  margin: auto;
-  padding-bottom: 3rem;
-}
-
-.svg-icon {
-  width: 75px;
-}
-
-/* Projects Section  */
-
-#projects-title {
-  padding-bottom: 3rem;
-}
-
-#projects h4 {
-  padding-top: 3rem;
-}
-
-.projects-img {
-  width: 340px;
-  border-radius: 10px;
-}
-
-#projects p {
-  text-align: left;
-}
-
-/* Contact Section  */
-
-#contact p {
-  margin: 1rem 0 2rem 0;
-}
-
-form {
-  max-width: 50%;
-  margin: auto;
-}
-
-#contact input {
-  border: none;
-}
-
-#contact textarea {
-  border: none;
-}
-
-.form-control {
+#navigation{
+  position: absolute;
+  top: 5rem;
+  z-index: 1;
+  width: 100%;
   text-align: center;
 }
 
-#contact .submit-button{
-  background-color: #00a3b5;
+#nav-btn{
+  font-size: 2.5rem;
+  color: black;
+  transition: 0.2s;
   border: none;
+  background: none;
 }
 
-#contact .submit-button:hover {
-  background-color: #05525a;
+#nav-btn:hover{
+  font-size: 3rem;
 }
 
-/* Footer Section  */
-
-#footer {
-  padding-top: 2%;
-  padding-bottom: 1%;
-  background-color: #05525a;
-  text-align: center;
+#nav-menu ul{
+  background-color: black;
 }
 
-#footer a {
-  color: white;
-}
-
-#footer a:hover {
-  color: #2892d7;
-}
-
-.fab {
-  font-size: 2rem;
-  margin: 0 1rem 2rem 1rem;
-  transition: 0.25s;
-}
-
-.fab:hover {
-  color: #2892d7;
-}
-
-@media (max-width: 1199px){
-  #projects p{
-    padding-bottom: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #title {
-    height: 100vh;
-  }
-
-  #title-name {
-    font-size: 6rem;
-  }
-
-  .about-desc{
-    padding-top: 1rem;
-  }
-
-  .about-icon{
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #about-desc-1{
-    padding-left: 0;
-  }
-
-  #skills h3{
-    text-align: center;
-  }
-
-  #skills-desc{
-    width: 100%;
-  }
-
-  form {
-    max-width: 100%;
-  }
-}
-
-/* Mobile View */
-
-@media (max-width: 480px) {
-
-  .section-title{
-    padding-bottom: 1rem;
-  }
-
-  .section-padding {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-
-  #title {
-    height: 100vh;
-  }
-
-  #title-name {
-    font-size: 3.5rem;
-  }
-
-  #title-desc {
-    font-size: 1.75rem;
-  }
-
-  #about-desc-1{
-    padding-left: 0;
-  }
-
-  .about-desc {
-    padding-top: 6%;
-    padding-left: 0;
-  }
-
-  .about-icon{
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #skills h3 {
-    margin-top: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  #skills-desc{
-    width: 100%;
-  }
-
-  #projects h4 {
-    padding-top: 2rem;
-  }
-
-  #projects p {
-    padding-bottom: 20%;
-  }
-
-  #projects {
-    padding-bottom: 0;
-  }
-
-  form {
-    max-width: 100%;
-  }
-
-  #footer {
-    padding-top: 1rem;
-  }
-
-  .fab {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+#nav-menu li{
+  display: inline;
 }

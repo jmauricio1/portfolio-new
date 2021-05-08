@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Contact(){
+function FeaturedProjects(){
   return(
     <section></section>
   )
 }
 
-export default Contact;
+export default FeaturedProjects;
