@@ -13,7 +13,7 @@ function Home(){
         options={{
           background: {
             color: {
-              value: "#FFF",
+              value: "#000",
             },
           },
           fpsLimit: 144,
@@ -32,7 +32,7 @@ function Home(){
             },
             modes: {
               bubble: {
-                distance: 100,
+                distance: 200,
                 duration: 2,
                 opacity: 0.8,
                 size: 20,
@@ -48,7 +48,7 @@ function Home(){
               value: "#000",
             },
             links: {
-              color: "#000",
+              color: "#fff",
               distance: 125,
               enable: true,
               opacity: 0.25,
@@ -80,7 +80,7 @@ function Home(){
             },
             size: {
               random: true,
-              value: 5,
+              value: 0,
             },
           },
           detectRetina: true,

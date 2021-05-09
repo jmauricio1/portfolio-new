@@ -6,6 +6,8 @@ html{
 
 body{
   font-family: "Raleway";
+  background-color: black;
+  color: white;
 }
 
 h1{
@@ -78,8 +80,8 @@ p{
 
 #nav-btn{
   font-size: 2.5rem;
-  color: black;
-  transition: 0.2s;
+  color: white;
+  transition: 0.2s ease-in-out;
   border: none;
   background: none;
   pointer-events: all;
@@ -109,8 +111,12 @@ p{
   top: 10rem;
   text-align: right;
   padding: 0 10vw;
+  z-index: 1;
 }
 
 #about-img{
+  position: relative;
   width: 80.3%;
+  top: -1px;
+  z-index: 0;
 }
