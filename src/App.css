@@ -9,40 +9,44 @@ body{
 }
 
 h1{
-  font-size: 199.6pt;
-  font-weight: 600;
-}
-
-h2{
-  font-size: 123.36pt;
-  font-weight: 500;
-}
-
-h3{
-  font-size: 76.34pt;
-  font-weight: 400;
-}
-
-h4{
-  font-size: 41.89pt;
+  font-size: 199.6px;
   font-weight: 700;
 }
 
-h5{
-  font-size: 18pt;
+h2{
+  font-size: 123.36px;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 76.34px;
   font-weight: 500;
+  margin-top: 15rem;
+  margin-bottom: 7.5rem;
+}
+
+h4{
+  font-size: 41.89px;
+  font-weight: 800;
+  margin-bottom: 7.5rem;
+}
+
+h5{
+  font-size: 18px;
+  font-weight: 600;
 }
 
 p{
-  font-size: 18pt;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 /*---------- || Home ----------*/
 
 #home{
   text-align: center;
-  position: relative;
+  height: 0;
 }
 
 .title{
@@ -50,7 +54,6 @@ p{
   top: 25vh;
   text-align: center;
   z-index: 1;
-  font-size: 150px;
   margin: 0;
   pointer-events: none;
 }
@@ -65,11 +68,12 @@ p{
 }
 
 #navigation{
-  position: absolute;
+  position: fixed;
   top: 5rem;
   z-index: 1;
   width: 100%;
   text-align: center;
+  pointer-events: none;
 }
 
 #nav-btn{
@@ -78,10 +82,11 @@ p{
   transition: 0.2s;
   border: none;
   background: none;
+  pointer-events: all;
 }
 
 #nav-btn:hover{
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 #nav-menu ul{
@@ -90,4 +95,22 @@ p{
 
 #nav-menu li{
   display: inline;
+}
+
+/*---------- || About ----------*/
+
+#about{
+  width: 100%;
+  margin-bottom: 15rem;
+}
+
+#about-title{
+  position: relative;
+  top: 10rem;
+  text-align: right;
+  padding: 0 10vw;
+}
+
+#about-img{
+  width: 80.3%;
 }

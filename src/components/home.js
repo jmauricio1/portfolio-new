@@ -62,7 +62,7 @@ function Home(){
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 0.75,
+              speed: 0.5,
               straight: false,
             },
             number: {
