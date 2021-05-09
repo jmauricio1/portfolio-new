@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="section-layout">
       <h2 id="about-title">
         I develop web apps <br /> & software
       </h2>
