@@ -7,7 +7,7 @@ function About() {
       <h2 id="about-title">
         I develop web apps <br /> & software
       </h2>
-      <img id="about-img" src="/images/temp-about.jpg" />
+      <img id="about-img" src="/images/temp-about.jpg" alt="temp"/>
       <Container>
         <h3>About</h3>
         <h4>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import BwcImages from "./bwc-images";
 import OadkImages from './ocean-images';
 
 function FeaturedProjects() {
@@ -28,6 +29,7 @@ function FeaturedProjects() {
           pleasing.
         </p>
       </Container>
+      <BwcImages />
     </section>
   );
 }

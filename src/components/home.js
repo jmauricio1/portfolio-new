@@ -13,7 +13,7 @@ function Home(){
         options={{
           background: {
             color: {
-              value: "#000",
+              value: "#FFF",
             },
           },
           fpsLimit: 144,
@@ -48,7 +48,7 @@ function Home(){
               value: "#000",
             },
             links: {
-              color: "#fff",
+              color: "#000",
               distance: 125,
               enable: true,
               opacity: 0.25,
@@ -80,7 +80,7 @@ function Home(){
             },
             size: {
               random: true,
-              value: 0,
+              value: 4,
             },
           },
           detectRetina: true,
