@@ -1,11 +1,34 @@
-import React from 'react';
+import React from "react";
+import { Container } from "react-bootstrap";
 
-function AppBreweryProjects(){
+function AppBreweryProjects() {
   return (
-    <section>
-      <h2>Bootcamp</h2>
+    <section className="section-layout">
+      <Container className="project-container">
+        <h2>Bootcamp</h2>
+        <h3>The Complete 2021 Web Development Bootcamp</h3>
+        <h4>Keeper App</h4>
+        <p>
+          The Keeper App is a simplified clone of Google Keep. The main purpose
+          of creating this application was to sharpen my skills on some key
+          concepts in React.js. Some core concepts that I was able to practice
+          during the creation of this project was event handling, state
+          management with React Hooks, array functions, forms, and spread
+          operators.
+        </p>
+      </Container>
+      <Container>
+        <h4>TinDog</h4>
+        <p>
+          The main idea behind TinDog was to make a Tinder for Dogs. The goal
+          in this project was to recreate the TinDog landing page from a design
+          of the page while implementing Bootstrap components. In practicing
+          front-end development for this project, I was able to improve my
+          skills with HTML and CSS.
+        </p>
+      </Container>
     </section>
-  )
+  );
 }
 
 export default AppBreweryProjects;
