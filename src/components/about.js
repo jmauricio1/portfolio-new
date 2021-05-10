@@ -7,12 +7,14 @@ function About() {
       <h2 id="about-title">
         I develop web apps <br /> & software
       </h2>
-      <img id="about-img" src="/images/temp-about.jpg" alt="temp"/>
+      <img id="about-img" src="/images/temp-about.jpg" alt="temp" />
       <Container>
         <h3>About</h3>
         <h4>
-          "This is a quote that of something that I believe in and it will be
-          included sooner or later" - Some Person
+          "In some ways, programming is like painting. You start with a blank
+          canvas and certain basic raw materials. You use a combination of
+          science, art, and craft to determine what to do with them." - Andrew
+          Hunt
         </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

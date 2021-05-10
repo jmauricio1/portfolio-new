@@ -34,20 +34,28 @@ function FeaturedProjects() {
         <h4>React Portfolio</h4>
         <p>
           My React portfolio is used to showcase my work, projects, and
-          information about myself. Please, don't be afraid to view the projects
-          I collaborated on and about myself as a developer.
+          information about myself. Please, don't be afraid to read about myself
+          as a developer and view the projects I collaborated on.
         </p>
       </Container>
       <Container className="project-container">
         <h4>Puppert</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Puppert is a productivity application that tracks the progress of user
+          and team created development projects.
+          <br />
+          <br />
+          I have found that other progress tracking applications are complex and
+          have many features that are not utilized by many users. Puppert is
+          made to have an easy-going user experience while having a
+          comprehensive and easy-to-understand user interface. While on Puppert,
+          users are able to track the progress of their projects while
+          implementing some Agile methods. This includes the process of creating
+          user stories and sprints.
+          <br />
+          <br />
+          "We believe in keeping the planning phase quick and simple so that
+          there is more room for your creativity."
         </p>
       </Container>
       <Container>

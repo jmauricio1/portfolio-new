@@ -218,11 +218,16 @@ margin-top: 5rem;
   left: -49px;
 }
 
-#bwc-phone-top{
+#bwc-phone-bottom{
   position: relative;
   left: 49px;
 }
 
 .project-container{
   padding-bottom: 15rem;
+}
+
+.contain-full-image{
+  width: 100%;
+  padding-bottom: 5rem;
 }
