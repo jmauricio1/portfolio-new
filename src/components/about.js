@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function About() {
   return (
@@ -27,16 +27,29 @@ function About() {
           the App Brewery providing help to those learning software and web
           development.
           <br />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <br />As a developer, I do not like being stagnant. I am always
+          striving to be a better developer than the day before. Being curious
+          and self-motivated, I push myself to keep learning new things, expand
+          my knowledge, and take on new challenges. I am passionate about what I
+          do and thus, apply my energetic, yet determined personality, in the
+          process of building applications and producing software with a
+          creative mind.
         </p>
+        <Row>
+          <Col sm={6}>
+            <a href="" className="social-icon">
+              <i className="fab fa-linkedin"></i>
+            </a>{" "}
+            <a href="" className="social-icon">
+              <i className="fab fa-github-square"></i>
+            </a>{" "}
+          </Col>
+          <Col sm={6} className="text-right">
+            <Button variant="outline-primary">Resume</Button>
+          </Col>
+        </Row>
       </Container>
+      <br />
     </section>
   );
 }

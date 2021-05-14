@@ -27,8 +27,7 @@ function BwcImages() {
         <Col lg={2}></Col>
         <Col lg={2}>
           <img
-          id="bwc-phone-bottom"
-            className="bwc-phone"
+            className="bwc-phone bwc-phone-bottom"
             src="/images/bwc-phone-2.jpg"
             alt="The black and white collection initial home page"
           />

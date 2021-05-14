@@ -1,5 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import AstroImages from "./astro-images";
 import BwcImages from "./bwc-images";
 import OadkImages from "./ocean-images";
 
@@ -9,7 +10,7 @@ function FeaturedProjects() {
       <Container className="project-container">
         <h2>Featured</h2>
         <h3>Client Work</h3>
-        <h4>Ocean and Dexter's Kitchen</h4>
+        <h4>Ocean and Dexter's Kitchen </h4>
         <p>
           Ocean and Dexter's Kitchen is a collection of recipes and tutorials
           from the talented Portland, Oregon based chef, Ocean Carlisle.
@@ -30,7 +31,7 @@ function FeaturedProjects() {
         </p>
       </Container>
       <BwcImages className="project-container" />
-      <Container className="project-container">
+      <Container>
         <h4>React Portfolio</h4>
         <p>
           My React portfolio is used to showcase my work, projects, and
@@ -38,7 +39,18 @@ function FeaturedProjects() {
           as a developer and view the projects I collaborated on.
         </p>
       </Container>
-      <Container className="project-container">
+      <Container fluid className="no-space project-container">
+        <Row className="no-space">
+          <Col className="no-space" lg={7}>
+            <img
+              className="contain-full-image"
+              alt="Portfolio home page"
+              src="/images/portfolio.jpg"
+            />
+          </Col>
+        </Row>
+      </Container>
+      <Container>
         <h4>Puppert</h4>
         <p>
           Puppert is a productivity application that tracks the progress of user
@@ -58,31 +70,42 @@ function FeaturedProjects() {
           there is more room for your creativity."
         </p>
       </Container>
+      <Container fluid className="no-space">
+        <Row className="no-space">
+          <Col lg={2}>
+          </Col>
+          <Col lg={2}>
+            <img src="/images/Puppert-phone.png" alt="Puppert phone view" className="contain-full-image bwc-phone-bottom" />
+          </Col>
+          <Col lg={1}></Col>
+          <Col lg={7} className="no-space">
+          <img src="/images/puppert-1.png" alt="Puppert phone view" className="contain-full-image" />
+          </Col>
+        </Row>
+      </Container>
       <Container>
         <h3>School Projects</h3>
         <h4>Astronomical Learning</h4>
         <p>
-          This project is a website focused around teaching younger audiences
-          about space related topics including our solar system, the universe,
-          and missions conducted by major space related companies such as NASA
-          and SpaceX. Our goal is to make the website as interesting and
-          engaging as possible to our target audience.
+          Astronomical Learning is a website for those interested in all things
+          space who want to learn more about SpaceX and NASA missions and space
+          itself. This project is also an informational system that will allow
+          people of all ages to learn about SpaceX, NASA and space in a variety
+          of ways.
           <br />
           <br />
-          For those interested in all things space who want to learn more about
-          SpaceX and NASA missions and space itself, the Astronomical Learning
-          Website is an informational system that will allow people of all ages
-          to learn about SpaceX, NASA and space in a variety of ways. Visitors
-          will be able to see what missions SpaceX and NASA have completed and
-          be able to view various information about each mission. The website
-          will also include other ways of teaching people about what goes into
-          space missions and other aspects of space. This will include
-          interactive media such as games and quizzes. Unlike SpaceX’s launch
-          manifest (https:// www.spacex.com/missions), our product will be able
-          to deliver more detailed information about SpaceX missions and in a
-          format that is more appealing to younger audiences alongside a much
-          larger scope of topics.
+          Visitors will be able to see what missions SpaceX and NASA have
+          completed and be able to view various information about each mission.
+          The website will also include other ways of teaching people about what
+          goes into space missions and other aspects of space. Unlike SpaceX’s
+          launch manifest, our product will be able to deliver more detailed
+          information about SpaceX missions and in a format that is more
+          appealing to younger audiences alongside a much larger scope of
+          topics.
         </p>
+      </Container>
+      <Container fluid className="no-space project-container">
+      <AstroImages />
       </Container>
     </section>
   );

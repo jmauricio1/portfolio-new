@@ -53,6 +53,10 @@ section{
   top: 25vh;
 }
 
+.container{
+  
+}
+
 /*---------- || Home ----------*/
 
 #home{
@@ -218,7 +222,7 @@ margin-top: 5rem;
   left: -49px;
 }
 
-#bwc-phone-bottom{
+.bwc-phone-bottom{
   position: relative;
   left: 49px;
 }
@@ -230,4 +234,11 @@ margin-top: 5rem;
 .contain-full-image{
   width: 100%;
   padding-bottom: 5rem;
+}
+
+.social-icon{
+  font-size: 2.5rem;
+  color:black;
+  margin: 0;
+  margin-right: 2rem;
 }
