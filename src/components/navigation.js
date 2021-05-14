@@ -43,9 +43,9 @@ function Navigation() {
           transitionDelay: navClicked ? "0s" : "0.75s",
         }}
       >
-        {linkList.map((link) => {
+        {linkList.map((link, index) => {
           return (
-            <li>
+            <li key={index}>
               <a className="nav-menu-link" style={navLinkAnimation} href={"/" + link}>
                 <span className="link-text">{((link === "") ? "home" : link)}</span>
               </a>

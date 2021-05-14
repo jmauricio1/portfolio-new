@@ -1,8 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import info from "./../../info";
-
 function AppBreweryProjects() {
   return (
     <section className="section-layout">
