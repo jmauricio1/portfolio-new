@@ -10,7 +10,7 @@ function FeaturedProjects() {
       <Container className="project-container">
         <h2>Featured</h2>
         <h3>Client Work</h3>
-        <h4>Ocean and Dexter's Kitchen </h4>
+        <h4><a href="https://oceananddexterskitchen.netlify.app/">Ocean and Dexter's Kitchen</a></h4>
         <p>
           Ocean and Dexter's Kitchen is a collection of recipes and tutorials
           from the talented Portland, Oregon based chef, Ocean Carlisle.
@@ -21,7 +21,7 @@ function FeaturedProjects() {
       </Container>
       <Container>
         <h3>Personal Projects</h3>
-        <h4>The Black and White Collection</h4>
+        <h4><a href="https://bwcollex.netlify.app/">The Black and White Collection</a></h4>
         <p>
           The Black and White collection is a simple selection of black and
           white images from various photographers and artists on Unsplash. The
@@ -60,7 +60,7 @@ function FeaturedProjects() {
           I have found that other progress tracking applications are complex and
           have many features that are not utilized by many users. Puppert is
           made to have an easy-going user experience while having a
-          comprehensive and easy-to-understand user interface. While on Puppert,
+          comprehensive user interface. While on Puppert,
           users are able to track the progress of their projects while
           implementing some Agile methods. This includes the process of creating
           user stories and sprints.
