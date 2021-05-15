@@ -4,16 +4,14 @@ import { Row, Col } from "react-bootstrap";
 function AstroImages() {
   return (
     <Row className="no-space">
-      <Col className="no-space" lg={7}>
+      <Col className="no-space" lg={12}>
         <img
           className="contain-full-image"
           alt="Earth tab from the planets page from Astronomical Learning"
           src="/images/al-1.jpg"
         />
       </Col>
-      <Col lg={5}></Col>
-      <Col lg={5}></Col>
-      <Col className="no-space" lg={7}>
+      <Col className="no-space" lg={12}>
         {" "}
         <img
           className="contain-full-image"
@@ -21,8 +19,7 @@ function AstroImages() {
           src="/images/al-3.jpg"
         />
       </Col>
-      <Col lg={2}></Col>
-      <Col className="no-space" lg={8}>
+      <Col className="no-space" lg={12}>
         {" "}
         <img
           className="contain-full-image"

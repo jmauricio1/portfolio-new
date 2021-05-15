@@ -3,14 +3,23 @@ import { Container, Row, Col } from "react-bootstrap";
 import AstroImages from "./astro-images";
 import BwcImages from "./bwc-images";
 import OadkImages from "./ocean-images";
+import Project from "./project";
+
+import info from "./../../info";
 
 function FeaturedProjects() {
   return (
     <section className="section-layout">
-      <Container className="project-container">
+      <Container>
         <h2>Featured</h2>
         <h3>Client Work</h3>
-        <h4><a href="https://oceananddexterskitchen.netlify.app/">Ocean and Dexter's Kitchen</a></h4>
+      </Container>
+      <Container className="project-container">
+        <h4>
+          <a href="https://oceananddexterskitchen.netlify.app/">
+            Ocean and Dexter's Kitchen
+          </a>
+        </h4>
         <p>
           Ocean and Dexter's Kitchen is a collection of recipes and tutorials
           from the talented Portland, Oregon based chef, Ocean Carlisle.
@@ -21,7 +30,11 @@ function FeaturedProjects() {
       </Container>
       <Container>
         <h3>Personal Projects</h3>
-        <h4><a href="https://bwcollex.netlify.app/">The Black and White Collection</a></h4>
+        <h4>
+          <a href="https://bwcollex.netlify.app/">
+            The Black and White Collection
+          </a>
+        </h4>
         <p>
           The Black and White collection is a simple selection of black and
           white images from various photographers and artists on Unsplash. The
@@ -38,17 +51,11 @@ function FeaturedProjects() {
           information about myself. Please, don't be afraid to read about myself
           as a developer and view the projects I collaborated on.
         </p>
-      </Container>
-      <Container fluid className="no-space project-container">
-        <Row className="no-space">
-          <Col className="no-space" lg={7}>
-            <img
-              className="contain-full-image"
-              alt="Portfolio home page"
-              src="/images/portfolio.jpg"
-            />
-          </Col>
-        </Row>
+        <img
+          className="contain-full-image"
+          alt="Portfolio home page"
+          src="/images/portfolio.jpg"
+        />
       </Container>
       <Container>
         <h4>Puppert</h4>
@@ -60,10 +67,10 @@ function FeaturedProjects() {
           I have found that other progress tracking applications are complex and
           have many features that are not utilized by many users. Puppert is
           made to have an easy-going user experience while having a
-          comprehensive user interface. While on Puppert,
-          users are able to track the progress of their projects while
-          implementing some Agile methods. This includes the process of creating
-          user stories and sprints.
+          comprehensive user interface. While on Puppert, users are able to
+          track the progress of their projects while implementing some Agile
+          methods. This includes the process of creating user stories and
+          sprints.
           <br />
           <br />
           "We believe in keeping the planning phase quick and simple so that
@@ -72,14 +79,20 @@ function FeaturedProjects() {
       </Container>
       <Container fluid className="no-space">
         <Row className="no-space">
-          <Col lg={2}>
-          </Col>
-          <Col lg={2}>
-            <img src="/images/Puppert-phone.png" alt="Puppert phone view" className="contain-full-image bwc-phone-bottom" />
+          <Col lg={7} className="no-space">
+            <img
+              src="/images/puppert-1.png"
+              alt="Puppert phone view"
+              className="contain-full-image"
+            />
           </Col>
           <Col lg={1}></Col>
-          <Col lg={7} className="no-space">
-          <img src="/images/puppert-1.png" alt="Puppert phone view" className="contain-full-image" />
+          <Col lg={2}>
+            <img
+              src="/images/Puppert-phone.png"
+              alt="Puppert phone view"
+              className="contain-full-image bwc-phone-top"
+            />
           </Col>
         </Row>
       </Container>
@@ -104,8 +117,8 @@ function FeaturedProjects() {
           topics.
         </p>
       </Container>
-      <Container fluid className="no-space project-container">
-      <AstroImages />
+      <Container className=" project-container">
+        <AstroImages />
       </Container>
     </section>
   );
