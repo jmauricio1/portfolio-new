@@ -8,7 +8,7 @@ import Project from "./project";
 import info from "./../../info";
 import PuppertImages from "./featured-images/puppert-images";
 
-function FeaturedProjects() {
+export default function FeaturedProjects() {
   let projList = info.projects.featured;
 
   return (
@@ -70,5 +70,3 @@ function FeaturedProjects() {
     </section>
   );
 }
-
-export default FeaturedProjects;
