@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function Project(props) {
   return (
-    <Container>
+    <Container className="no-space">
       <h4>
         <a href={props.link}>{props.title}</a>
       </h4>
