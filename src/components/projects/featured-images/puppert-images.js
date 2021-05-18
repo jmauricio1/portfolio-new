@@ -16,7 +16,7 @@ function PuppertImages(){
             <img
               src="/images/Puppert-phone.png"
               alt="Puppert phone view"
-              className="contain-full-image bwc-phone-top"
+              className="contain-full-image phone-top"
             />
           </Col>
         </Row>

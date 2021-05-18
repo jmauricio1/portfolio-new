@@ -7,7 +7,7 @@ function OadkImages() {
       <Row>
         <Col lg={12}>
           <img
-            id="oadk-main"
+          className="full-width"
             alt="Ocean and Dexter's Kitchen"
             src="/images/oadkFrame.png"
           />

@@ -24,7 +24,7 @@ function AppBreweryProjects() {
           paragraphs={projList[0].paragraphs}
         />
         <img
-          className="contain-full-image"
+          className="full-width"
           src="/images/keeper-app.png"
           alt="The Keeper App home page."
         />

@@ -7,26 +7,24 @@ function BwcImages() {
       <Row className="no-space">
         <Col lg={7} className="no-space">
           <img
-            className="bwc-desktop"
+            className="full-width"
             src="/images/bwc-top.png"
             alt="The black and white collection initial home page"
           />
         </Col>
-        <Col lg={1}></Col>
-        <Col lg={2}>
+        <Col lg={{span: 2, offset: 1}}>
           <img
-            className="bwc-phone bwc-phone-top"
+            className="full-width phone-top"
             src="/images/bwcollexPhone.png"
             alt="The black and white collection initial home page"
           />
         </Col>
       </Row>
       <div style={{height: "5rem"}}></div>
-      <Row className="no-space">
-        <Col lg={2}></Col>
+      <Row className="no-space justify-content-end">
         <Col lg={2}>
           <img
-            className="bwc-phone bwc-phone-bottom"
+            className="full-width phone-bottom"
             src="/images/bwc-phone-2.jpg"
             alt="The black and white collection initial home page"
           />
@@ -34,7 +32,7 @@ function BwcImages() {
         <Col lg={1}></Col>
         <Col lg={7} className="no-space">
           <img
-            className="bwc-desktop"
+            className="full-width"
             src="/images/bwc-mid.jpg"
             alt="The black and white collection initial home page"
           />

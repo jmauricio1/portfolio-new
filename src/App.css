@@ -1,66 +1,77 @@
 /*---------- || Apply Globally ----------*/
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: "Raleway";
   color: black;
 }
 
-h1{
+h1 {
   font-size: 199.6px;
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-size: 123.36px;
   font-weight: 600;
 }
 
-h3{
+h3 {
   font-size: 76.34px;
   font-weight: 400;
   margin-top: 10rem;
   margin-bottom: 5rem;
 }
 
-h4{
+h4 {
   font-size: 41.89px;
   font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
-h5{
+h5 {
   font-size: 18px;
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 18px;
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 5rem;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-section{
+section {
   position: relative;
   top: 25vh;
 }
 
+.section-layout {
+  width: 100%;
+  margin-bottom: 15rem;
+}
+
+.section-layout h2 {
+  position: relative;
+  text-align: right;
+  z-index: 1;
+}
+
 /*---------- || Home ----------*/
 
-#home{
+#home {
   text-align: center;
   height: 0;
 }
 
-.title{
+.title {
   position: relative;
   text-align: center;
   z-index: 1;
@@ -68,7 +79,7 @@ section{
   pointer-events: none;
 }
 
-.particles-canvas{
+.particles-canvas {
   top: 0;
   left: 0;
   height: 100vh;
@@ -77,7 +88,7 @@ section{
   z-index: -1;
 }
 
-#navigation{
+#navigation {
   position: fixed;
   top: 5rem;
   z-index: 2;
@@ -86,7 +97,7 @@ section{
   pointer-events: none;
 }
 
-#nav-btn{
+#nav-btn {
   font-size: 2.5rem;
   transition: 0.2s ease-in-out;
   border: none;
@@ -97,11 +108,11 @@ section{
   z-index: 3;
 }
 
-#nav-btn:hover{
+#nav-btn:hover {
   font-size: 2.8rem;
 }
 
-#nav-menu{
+#nav-menu {
   padding: 0;
   margin: 0 auto;
   background-color: black;
@@ -111,11 +122,11 @@ section{
   border-right: 1rem solid #0075f2;
 }
 
-#nav-menu li{
+#nav-menu li {
   display: inline;
 }
 
-.nav-menu-link{
+.nav-menu-link {
   pointer-events: all;
   margin: 0 1rem;
   color: white;
@@ -123,40 +134,29 @@ section{
   text-decoration: none;
 }
 
-.nav-menu-link:hover{
+.nav-menu-link:hover {
   color: white;
 }
 
-.link-text{
+.link-text {
   font-size: 18px;
   transition-delay: 0s;
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.link-text:hover{
+.link-text:hover {
   color: gray;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /*---------- || About ----------*/
 
-.section-layout{
-  width: 100%;
-  margin-bottom: 15rem;
-}
-
-#about-title{
+#about-title {
   padding: 0 10vw;
 }
 
-.section-layout h2{
-  position: relative;
-  text-align: right;
-  z-index: 1;
-}
-
-#about-img{
+#about-img {
   position: relative;
   width: 80.3%;
   z-index: 0;
@@ -165,78 +165,73 @@ section{
 
 /*---------- || Projects ----------*/
 
-#projects h3, p{
+#projects h3,
+p {
   display: inline-block;
 }
 
-#projects h3{
+#projects h3 {
   margin-top: 5rem;
   margin-bottom: 0;
 }
 
-.project-link{
+.project-link {
   color: black;
   transition: 0.5s ease-in-out;
   border-bottom: solid 5px white;
 }
 
-.project-link:hover{
+.project-link:hover {
   text-decoration: none;
   border-bottom: solid 5px black;
   color: black;
 }
 
+.project-link p {
+  margin-bottom: 0;
+}
 
 /* Ocean */
 
-#oadk-main{
+.full-width {
   width: 100%;
 }
 
-.oadk-img{
+.oadk-img {
   width: 80%;
 }
 
-#oadk-phone-row{
-margin-top: 5rem;
+#oadk-phone-row {
+  margin-top: 5rem;
 }
 
-.bwc-desktop{
-  width: 100%
-}
-
-.no-space{
+.no-space {
   padding: 0;
   margin: 0;
 }
 
-.bwc-phone{
-  width: 100%;
-  background-color: transparent;
-}
-
-.bwc-phone-top{
+.phone-top {
   position: relative;
   left: -49px;
 }
 
-.bwc-phone-bottom{
+.phone-bottom {
   position: relative;
   left: 49px;
 }
 
-.project-container{
+.project-container {
   padding-bottom: 15rem;
 }
 
-.contain-full-image{
+.contain-full-image {
   width: 100%;
   padding-bottom: 5rem;
 }
 
-.social-icon{
+.social-icon {
   font-size: 2.5rem;
-  color:black;
+  color: black;
   margin: 0;
   margin-right: 2rem;
 }

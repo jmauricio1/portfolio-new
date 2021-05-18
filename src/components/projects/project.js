@@ -7,9 +7,9 @@ function Project(props) {
       <h4>
         <a href={props.link}>{props.title}</a>
       </h4>
-      {props.paragraphs.map((par) => {
+      {props.paragraphs.map((par, index) => {
         return(
-          <p>{par}</p>
+          <p key={index}>{par}</p>
         )
       })}
     </Container>

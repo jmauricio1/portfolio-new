@@ -22,7 +22,7 @@ function SecretsImages(){
           <Col lg={12}>
             {" "}
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/secrets-3.png"
               alt="Secrets home page"
             />

@@ -9,7 +9,6 @@ import info from "./../../info";
 import PuppertImages from "./featured-images/puppert-images";
 
 function FeaturedProjects() {
-
   let projList = info.projects.featured;
 
   return (
@@ -17,35 +16,53 @@ function FeaturedProjects() {
       <Container>
         <h2>Featured</h2>
         <h3>Client Work</h3>
-        <Project link={projList[0].link} title={projList[0].title} paragraphs={projList[0].paragraphs}/>
+        <Project
+          link={projList[0].link}
+          title={projList[0].title}
+          paragraphs={projList[0].paragraphs}
+        />
       </Container>
       <Container className="project-container">
         <OadkImages />
       </Container>
       <Container>
         <h3>Personal Projects</h3>
-        <Project link={projList[1].link} title={projList[1].title} paragraphs={projList[1].paragraphs}/>
+        <Project
+          link={projList[1].link}
+          title={projList[1].title}
+          paragraphs={projList[1].paragraphs}
+        />
       </Container>
       <BwcImages className="project-container" />
-      <Container>
-      <Project link={projList[2].link} title={projList[2].title} paragraphs={projList[2].paragraphs}/>
+      <Container className="project-container">
+        <Project
+          link={projList[2].link}
+          title={projList[2].title}
+          paragraphs={projList[2].paragraphs}
+        />
         <img
-          className="contain-full-image"
+          className="full-width"
           alt="Portfolio home page"
           src="/images/portfolio.jpg"
         />
       </Container>
       <Container>
-      <Project link={projList[3].link} title={projList[3].title} paragraphs={projList[3].paragraphs}/>
-
+        <Project
+          link={projList[3].link}
+          title={projList[3].title}
+          paragraphs={projList[3].paragraphs}
+        />
       </Container>
       <Container fluid className="no-space">
         <PuppertImages />
       </Container>
       <Container>
         <h3>School Projects</h3>
-        <Project link={projList[4].link} title={projList[4].title} paragraphs={projList[4].paragraphs}/>
-
+        <Project
+          link={projList[4].link}
+          title={projList[4].title}
+          paragraphs={projList[4].paragraphs}
+        />
       </Container>
       <Container className=" project-container">
         <AstroImages />
