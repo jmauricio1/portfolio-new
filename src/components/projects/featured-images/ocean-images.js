@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 function OadkImages() {
   return (
     <div>
-      <Row>
+      <Row className="mb-5">
         <Col lg={12}>
           <img
           className="full-width"
@@ -13,7 +13,7 @@ function OadkImages() {
           />
         </Col>
       </Row>
-      <Row id="oadk-phone-row">
+      <Row>
         <Col lg={4} className="text-left">
           <img
             className="oadk-img"

@@ -33,7 +33,7 @@ export default function FeaturedProjects() {
           paragraphs={projList[1].paragraphs}
         />
       </Container>
-      <BwcImages className="project-container" />
+      <BwcImages/>
       <Container className="project-container">
         <Project
           link={projList[2].link}

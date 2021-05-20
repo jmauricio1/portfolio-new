@@ -4,14 +4,14 @@ import {Row, Col} from 'react-bootstrap';
 function TindogImages(){
   return(
     <Row>
-          <Col lg={12}>
+          <Col lg={12} className="mb-5">
             <img
               className="contain-full-image"
               src="/images/tindog1.png"
               alt="TinDog"
             />
           </Col>
-          <Col lg={12}>
+          <Col lg={12} className="mb-5">
             <img
               className="contain-full-image"
               src="/images/tindog2.png"
@@ -19,7 +19,7 @@ function TindogImages(){
             />
             <p></p>
           </Col>
-          <Col lg={12}>
+          <Col lg={12} className="mb-5">
             <img
               className="contain-full-image"
               src="/images/tindog3.png"

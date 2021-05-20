@@ -4,7 +4,7 @@ import {Row, Col} from 'react-bootstrap';
 function SecretsImages(){
   return(
     <Row className="no-space">
-          <Col lg={6}>
+          <Col lg={6} className="mb-5">
             <img
               className="contain-full-image"
               src="/images/secrets-1.png"

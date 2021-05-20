@@ -23,13 +23,12 @@ h3 {
   font-size: 76.34px;
   font-weight: 400;
   margin-top: 10rem;
-  margin-bottom: 5rem;
 }
 
 h4 {
   font-size: 41.89px;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-top: 5rem;
 }
 
 h5 {
@@ -41,7 +40,8 @@ p {
   font-size: 18px;
   font-weight: 500;
   line-height: 40px;
-  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 a:hover {
@@ -55,7 +55,7 @@ section {
 
 .section-layout {
   width: 100%;
-  margin-bottom: 15rem;
+  padding-bottom: 15rem;
 }
 
 .section-layout h2 {
@@ -109,7 +109,7 @@ section {
 }
 
 #nav-btn:hover {
-  font-size: 2.8rem;
+  transform:scale(1.5);
 }
 
 #nav-menu {
@@ -120,10 +120,14 @@ section {
   height: 2rem;
   border-left: 1rem solid #0075f2;
   border-right: 1rem solid #0075f2;
+  position: relative;
+  z-index: 2;  
 }
 
 #nav-menu li {
   display: inline;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-menu-link {
@@ -152,42 +156,99 @@ section {
 
 /*---------- || About ----------*/
 
-#about-title {
+#about h2 {
   padding: 0 10vw;
+  pointer-events: none;
 }
 
-#about-img {
+#about h3{
+  margin-top: 0;
+}
+
+/* #about-img {
   position: relative;
   width: 80.3%;
   z-index: 0;
   top: -9rem;
-}
+} */
 
 /*---------- || Projects ----------*/
 
-#projects h3,
-p {
-  display: inline-block;
+#projects{
+  padding-bottom: 0;
 }
 
-#projects h3 {
-  margin-top: 5rem;
-  margin-bottom: 0;
+#projects h3,
+span {
+  display: inline-block;
 }
 
 .project-link {
   color: black;
   transition: 0.5s ease-in-out;
-  border-bottom: solid 5px white;
+  height: 50px;
+  position: relative;
+  transition: all 0.25s cubic-bezier(1, 0, 0.58, 0.97);
+  text-decoration: none;
+  transition: 2s;
+  animation: animate 0.75 1.1s ease 1 both;
 }
 
-.project-link:hover {
-  text-decoration: none;
+.project-link:hover{
+  color: black;
+  opacity: 0.25;
+}
+
+.project-link:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background:#16151b;
+  bottom: 20px;
+  animation: out 2s cubic-bezier(.62,0,.31,.99) 1 both;
+}
+
+.project-link:hover:before{
+  animation:in 2s cubic-bezier(.62,0,.31,.99) 1 both;
+}
+
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+/* .project-link:hover {
   border-bottom: solid 5px black;
   color: black;
+} */
+
+.project-link h3{
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 
-.project-link p {
+.project-link span {
   margin-bottom: 0;
 }
 
@@ -199,10 +260,6 @@ p {
 
 .oadk-img {
   width: 80%;
-}
-
-#oadk-phone-row {
-  margin-top: 5rem;
 }
 
 .no-space {
@@ -221,12 +278,11 @@ p {
 }
 
 .project-container {
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
 }
 
 .contain-full-image {
   width: 100%;
-  padding-bottom: 5rem;
 }
 
 .social-icon {
@@ -234,4 +290,21 @@ p {
   color: black;
   margin: 0;
   margin-right: 2rem;
+}
+
+.social-icon i{
+  transition: 0.2s ease-in-out;
+}
+
+.social-icon:hover i{
+  transform: scale(1.3);
+  color: #0075f2;
+}
+
+.about-image-distortion{
+  position: relative;
+  width: 80.3vw;
+  height: 100vh;
+  z-index: 0;
+  top: -9rem;
 }

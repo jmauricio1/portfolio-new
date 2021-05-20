@@ -4,10 +4,10 @@ import { Col } from "react-bootstrap";
 function SocialIcons() {
   return (
     <Col sm={6}>
-      <a href="/" className="social-icon">
+      <a href="https://www.linkedin.com/in/joshuajacobmauricio/" className="social-icon">
         <i className="fab fa-linkedin"></i>
       </a>{" "}
-      <a href="/" className="social-icon">
+      <a href="https://github.com/jmauricio1" className="social-icon">
         <i className="fab fa-github-square"></i>
       </a>{" "}
     </Col>

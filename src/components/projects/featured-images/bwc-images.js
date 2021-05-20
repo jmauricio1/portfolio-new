@@ -3,8 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function BwcImages() {
   return (
-    <Container fluid className="no-space project-container">
-      <Row className="no-space">
+    <Container fluid className="no-space project-container image-row">
+      <Row className="no-space mb-5">
         <Col lg={7} className="no-space">
           <img
             className="full-width"
@@ -20,7 +20,6 @@ function BwcImages() {
           />
         </Col>
       </Row>
-      <div style={{height: "5rem"}}></div>
       <Row className="no-space justify-content-end">
         <Col lg={2}>
           <img
