@@ -18,7 +18,7 @@ function ContactForm() {
       </Form.Group>
       <Form.Group as={Row} className="justify-content-lg-end">
         <Col lg={6} className="text-right">
-          <Button variant="primary">Send</Button>
+          <Button variant="outline-primary">Send</Button>
         </Col>
       </Form.Group>
     </Form>

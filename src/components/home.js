@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Particles from 'react-tsparticles';
 
 function Home(){
+  const [applyStyle, setApplyStyle] = useState(false);
+
+  function handleOver(){
+    setApplyStyle(true);
+  }
+
+  function handleOut(){
+    setApplyStyle(false);
+  }
+
+  let letter = {
+    color: "red"
+  }
+
   return(
     <section id="home">
       <h1 className="title">
-        Hello. <br /> I'm Josh.
+        <span className="allow-pointer" style={(applyStyle) ? letter : null} onMouseOver={handleOver} onMouseOut={handleOut}>H</span>ello. <br /> I'm Josh.
       </h1>
       <Particles
         id="tsparticles"

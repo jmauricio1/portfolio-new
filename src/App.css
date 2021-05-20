@@ -190,7 +190,7 @@ span {
   position: relative;
   transition: all 0.25s cubic-bezier(1, 0, 0.58, 0.97);
   text-decoration: none;
-  transition: 2s;
+  transition: 1.5s;
   animation: animate 0.75 1.1s ease 1 both;
 }
 
@@ -206,11 +206,11 @@ span {
   height: 3px;
   background:#16151b;
   bottom: 20px;
-  animation: out 2s cubic-bezier(.62,0,.31,.99) 1 both;
+  animation: out 1.5s cubic-bezier(.62,0,.31,.99) 1 both;
 }
 
 .project-link:hover:before{
-  animation:in 2s cubic-bezier(.62,0,.31,.99) 1 both;
+  animation: in 1.5s cubic-bezier(.62,0,.31,.99) 1 both;
 }
 
 @keyframes in{
@@ -307,4 +307,10 @@ span {
   height: 100vh;
   z-index: 0;
   top: -9rem;
+}
+
+.allow-pointer{
+  pointer-events: all;
+  cursor: context-menu;
+  transition: 0.25s;
 }
