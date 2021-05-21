@@ -1,25 +1,34 @@
-import React, { useState } from 'react';
-import Particles from 'react-tsparticles';
+import React, { useState } from "react";
+import Particles from "react-tsparticles";
 
-function Home(){
+function Home() {
   const [applyStyle, setApplyStyle] = useState(false);
 
-  function handleOver(){
+  function handleOver() {
     setApplyStyle(true);
   }
 
-  function handleOut(){
+  function handleOut() {
     setApplyStyle(false);
   }
 
   let letter = {
-    color: "red"
-  }
+    color: "red",
+    transform: "scaleY(0.5)",
+  };
 
-  return(
+  return (
     <section id="home">
       <h1 className="title">
-        <span className="allow-pointer" style={(applyStyle) ? letter : null} onMouseOver={handleOver} onMouseOut={handleOut}>H</span>ello. <br /> I'm Josh.
+        <span
+          className="allow-pointer"
+          style={applyStyle ? letter : null}
+          onMouseOver={handleOver}
+          onMouseOut={handleOut}
+        >
+          H
+        </span>
+        ello.<br />I'm Josh.
       </h1>
       <Particles
         id="tsparticles"
@@ -54,7 +63,7 @@ function Home(){
               },
               push: {
                 quantity: 2,
-              }
+              },
             },
           },
           particles: {
@@ -101,7 +110,7 @@ function Home(){
         }}
       />
     </section>
-  )
+  );
 }
 
 export default Home;

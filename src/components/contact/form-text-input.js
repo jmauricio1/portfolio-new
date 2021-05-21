@@ -1,16 +1,13 @@
 import React from "react";
-import { Form, Row, Col } from "react-bootstrap";
+import { Form, Row,} from "react-bootstrap";
 
 export default function FormTextInput(props) {
   return (
-    <Form.Group as={Row} controlId={props.idName}>
-      <Form.Label column md={5} className="text-right">
-        {props.label}
+    <Form.Group as={Row} controlId={props.idName} className="input-spacing">
+      <Form.Label className="text-left">
+        <h5>{props.label}</h5>
       </Form.Label>
-      <Col md={1}></Col>
-      <Col md={6}>
-        <Form.Control type="text" />
-      </Col>
+        <Form.Control type={props.type} onChange={props.onChange} name={props.idName}/>
     </Form.Group>
   );
 }

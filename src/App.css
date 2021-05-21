@@ -7,6 +7,22 @@ html {
 body {
   font-family: "Raleway";
   color: black;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background:black;
+  border-radius: 5px;
+  background: gray;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: black;
 }
 
 h1 {
@@ -64,6 +80,12 @@ section {
   z-index: 1;
 }
 
+.form-control{
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #ced4da;
+}
+
 /*---------- || Home ----------*/
 
 #home {
@@ -85,7 +107,7 @@ section {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 #navigation {
@@ -106,6 +128,8 @@ section {
   margin-bottom: 5px;
   position: relative;
   z-index: 3;
+  background: inherit;
+  mix-blend-mode: difference;
 }
 
 #nav-btn:hover {
@@ -313,4 +337,23 @@ span {
   pointer-events: all;
   cursor: context-menu;
   transition: 0.25s;
+}
+
+.allow-pointer:hover{
+  color: "red";
+  transform: "scaleY(0.5)";
+}
+
+.contact-form{
+  margin-top: 5rem;
+}
+
+.form-group{
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.form-control:focus{
+  border-color: #ced4da;
+  box-shadow: none;
 }
