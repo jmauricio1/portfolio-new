@@ -24,24 +24,21 @@ import {
 function Skills() {
   return (
     <section id="skills" className="section-layout">
-      <Container>
+      <Container className="p-container">
         <h2>Skills</h2>
-        <Row>
-          <Col lg={2}>
-            <div id="js-icon">
-              <Javascript color="#F7DF1E" size="100%" />
-            </div>
+        <Row className="no-space">
+          <Col className="no-space" lg={2}>
+            <Javascript className="p-icon" color="#F7DF1E" size="100%" />
           </Col>
-          <Col lg={2}>
-            <Csharp
+          <Col className="no-space" lg={2}>
+            <Csharp className="p-icon"
               color="#FFF"
               style={{ backgroundColor: "#239120" }}
               size="100%"
             />
-            
           </Col>
           <Col lg={2}>
-            <Cplusplus
+            <Cplusplus className="p-icon"
               color="#FFF"
               style={{ backgroundColor: "#00599C" }}
               size="100%"
@@ -49,21 +46,21 @@ function Skills() {
           </Col>
           <Col lg={2}>
             <Html5
-              color="#FFF"
+              color="#FFF" className="p-icon"
               style={{ backgroundColor: "#E34F26" }}
               size="100%"
             />
           </Col>
           <Col lg={2}>
             <CssThree
-              color="#FFF"
+              color="#FFF" className="p-icon"
               style={{ backgroundColor: "#1572B6" }}
               size="100%"
             />
           </Col>
           <Col lg={2}>
             <ReactJs
-              color="#FFF"
+              color="#FFF" className="p-icon"
               style={{ backgroundColor: "#61DAFB" }}
               size="100%"
             />
@@ -76,21 +73,21 @@ function Skills() {
             />
           </Col>
           <Col lg={2}>
-            <Visualstudiocode
+            <Visualstudiocode className="p-icon"
               color="#FFF"
               style={{ backgroundColor: "#007ACC" }}
               size="100%"
             />
           </Col>
           <Col lg={2}>
-            <Git
+            <Git className="p-icon"
               color="#FFF"
               style={{ backgroundColor: "#F05032" }}
               size="100%"
             />
           </Col>
           <Col lg={2}>
-            <Github
+            <Github className="p-icon"
               color="#FFF"
               style={{ backgroundColor: "#181717" }}
               size="100%"

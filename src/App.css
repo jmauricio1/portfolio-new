@@ -10,18 +10,18 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 10px;
 }
 
-body::-webkit-scrollbar-thumb{
-  background:black;
+body::-webkit-scrollbar-thumb {
+  background: black;
   border-radius: 5px;
   background: gray;
   transition: 1s;
 }
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover {
   background: black;
 }
 
@@ -80,7 +80,7 @@ section {
   z-index: 1;
 }
 
-.form-control{
+.form-control {
   border: none;
   border-radius: 0;
   border-bottom: 3px solid #ced4da;
@@ -133,7 +133,7 @@ section {
 }
 
 #nav-btn:hover {
-  transform:scale(1.5);
+  transform: scale(1.5);
 }
 
 #nav-menu {
@@ -145,7 +145,7 @@ section {
   border-left: 1rem solid #0075f2;
   border-right: 1rem solid #0075f2;
   position: relative;
-  z-index: 2;  
+  z-index: 2;
 }
 
 #nav-menu li {
@@ -185,7 +185,7 @@ section {
   pointer-events: none;
 }
 
-#about h3{
+#about h3 {
   margin-top: 0;
 }
 
@@ -198,7 +198,7 @@ section {
 
 /*---------- || Projects ----------*/
 
-#projects{
+#projects {
   padding-bottom: 0;
 }
 
@@ -218,44 +218,44 @@ span {
   animation: animate 0.75 1.1s ease 1 both;
 }
 
-.project-link:hover{
+.project-link:hover {
   color: black;
   opacity: 0.25;
 }
 
-.project-link:before{
-  content:'';
+.project-link:before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  background:#16151b;
+  background: #16151b;
   bottom: 20px;
-  animation: out 1.5s cubic-bezier(.62,0,.31,.99) 1 both;
+  animation: out 1.5s cubic-bezier(0.62, 0, 0.31, 0.99) 1 both;
 }
 
-.project-link:hover:before{
-  animation: in 1.5s cubic-bezier(.62,0,.31,.99) 1 both;
+.project-link:hover:before {
+  animation: in 1.5s cubic-bezier(0.62, 0, 0.31, 0.99) 1 both;
 }
 
-@keyframes in{
-  0%{
+@keyframes in {
+  0% {
     width: 0;
-    left:0;
-    right:auto;
+    left: 0;
+    right: auto;
   }
-  100%{
-    left:0;
-    right:auto;
+  100% {
+    left: 0;
+    right: auto;
     width: 100%;
   }
 }
-@keyframes out{
-  0%{
-    width:100%;
+@keyframes out {
+  0% {
+    width: 100%;
     left: auto;
     right: 0;
   }
-  100%{
+  100% {
     width: 0;
     left: auto;
     right: 0;
@@ -267,7 +267,7 @@ span {
   color: black;
 } */
 
-.project-link h3{
+.project-link h3 {
   margin-top: 5rem;
   margin-bottom: 0;
 }
@@ -316,16 +316,16 @@ span {
   margin-right: 2rem;
 }
 
-.social-icon i{
+.social-icon i {
   transition: 0.2s ease-in-out;
 }
 
-.social-icon:hover i{
+.social-icon:hover i {
   transform: scale(1.3);
   color: #0075f2;
 }
 
-.about-image-distortion{
+.about-image-distortion {
   position: relative;
   width: 80.3vw;
   height: 100vh;
@@ -333,27 +333,41 @@ span {
   top: -9rem;
 }
 
-.allow-pointer{
+.allow-pointer {
   pointer-events: all;
   cursor: context-menu;
   transition: 0.25s;
 }
 
-.allow-pointer:hover{
+.allow-pointer:hover {
   color: "red";
   transform: "scaleY(0.5)";
 }
 
-.contact-form{
+.contact-form {
   margin-top: 5rem;
 }
 
-.form-group{
+.form-group {
   margin-top: 2.5rem;
   margin-bottom: 5rem;
 }
 
-.form-control:focus{
-  border-color: #ced4da;
+.form-control:focus {
+  border-color: #0075f2;
   box-shadow: none;
+}
+
+.p-icon {
+  transition: 0.5s ease-out;
+  transform: rotateY(-45deg);
+}
+
+.p-container{
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.p-icon:hover{
+  transform: rotateY(0deg);
 }
