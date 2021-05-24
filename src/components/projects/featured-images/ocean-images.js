@@ -5,7 +5,7 @@ function OadkImages() {
   return (
     <div>
       <Row className="mb-5">
-        <Col lg={12}>
+        <Col className="no-space" lg={12}>
           <img
           className="full-width"
             alt="Ocean and Dexter's Kitchen"
@@ -14,21 +14,21 @@ function OadkImages() {
         </Col>
       </Row>
       <Row>
-        <Col lg={4} className="text-left">
+        <Col lg={4} xs={6} className="text-center mb-4">
           <img
             className="oadk-img"
             alt="Ocean and Dexter's Kitchen Phone Home"
             src="/images/oadk-phone1.png"
           />
         </Col>
-        <Col lg={4} className="text-center">
+        <Col lg={4} xs={6} className="text-center">
           <img
             className="oadk-img"
             alt="Ocean and Dexter's Kitchen Phone Recipes"
             src="/images/oadk-phone2.png"
           />
         </Col>
-        <Col lg={4} className="text-right">
+        <Col lg={{span: 4, offset: 0}} xs={{span: 6, offset: 3}} className="text-center">
           <img
             className="oadk-img"
             alt="Ocean and Dexter's Kitchen Phone About"

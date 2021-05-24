@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 function SocialIcons() {
   return (
-    <Col sm={6}>
+    <Col xs={6}>
       <a href="https://www.linkedin.com/in/joshuajacobmauricio/" className="social-icon">
         <i className="fab fa-linkedin"></i>
       </a>{" "}

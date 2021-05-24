@@ -26,8 +26,8 @@ function About() {
           })}
         <Row>
           <SocialIcons />
-          <Col sm={6} className="text-right">
-            <Button variant="outline-primary" href="/images/JoshuaJacobMauricio.Resume.pdf" target="_black">Resume</Button>
+          <Col xs={6} className="text-right">
+            <Button id="resume-btn" variant="outline-primary" href="/images/JoshuaJacobMauricio.Resume.pdf" target="_black">Resume</Button>
           </Col>
         </Row>
       </Container>

@@ -17,6 +17,11 @@ function Home() {
     transform: "scaleY(0.5)",
   };
 
+  let nodeCount = 200;
+  if(window.innerWidth <= 414){
+    nodeCount = 100;
+  }
+
   return (
     <section id="home">
       <h1 className="title">
@@ -93,7 +98,7 @@ function Home() {
                 enable: false,
                 value_area: 800,
               },
-              value: 200,
+              value: nodeCount,
             },
             opacity: {
               value: 0.75,

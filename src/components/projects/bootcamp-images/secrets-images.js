@@ -14,7 +14,7 @@ function SecretsImages(){
           <Col lg={6}>
             {" "}
             <img
-              className="full-width"
+              className="full-width mb-5"
               src="/images/secrets-2.png"
               alt="Secrets home page"
             />

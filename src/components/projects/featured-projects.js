@@ -41,10 +41,13 @@ export default function FeaturedProjects() {
           paragraphs={projList[2].paragraphs}
         />
         <img
-          className="full-width"
+          className="full-width no-space"
           alt="Portfolio home page"
           src="/images/portfolio.jpg"
         />
+      </Container>
+      <Container fluid className="nos-space">
+        
       </Container>
       <Container>
         <Project

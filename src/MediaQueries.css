@@ -1,0 +1,82 @@
+@media (max-width: 480px) {
+  /*---------- || Apply Globally ----------*/
+  h1 {
+    font-size: 79.84px;
+    font-weight: 700;
+  }
+
+  h2{
+    font-size: 49.344px;
+  }
+
+  h3{
+    margin-top: 5rem;
+    font-size: 35px;
+  }
+
+  h4{
+    font-size: 25px;
+    margin-top: 2.5rem;
+  }
+
+  section{
+    top: 20vh;
+  }
+
+  .section-layout h2 {
+    position: relative;
+    text-align: right;
+    z-index: 1;
+  }
+
+  /*---------- || Navigation ----------*/
+  .link-text{
+    margin-top: 0.25rem;
+    font-size: 16px;
+  }
+
+  .nav-menu-link{
+    margin: 0 0.5rem;
+  }
+
+  #navigation{
+    top: 2.5rem;
+  }
+
+  #nav-menu{
+    border: none;
+  }
+
+  #nav-btn:hover {
+    transform: scale(1.4);
+  }
+
+  /*---------- || Home ----------*/
+
+  /*---------- || About ----------*/
+  .about-image-distortion{
+    width: 100vw;
+    height: 40vh;
+    top: -4.5rem;
+  }
+
+  /*---------- || Projects ----------*/
+  .project-link:before{
+    bottom: 12.5px;
+  }
+
+  .phone-right{
+    left: 0;
+  }
+
+  .phone-left{
+    left: 0;
+  }
+
+  /*---------- Ocean and Dexter's Kitchen ----------*/
+  .oadk-img{
+    width: 100%;
+  }
+
+  /*---------- BWC ----------*/
+}

@@ -206,6 +206,8 @@ section {
   color: black;
   margin: 0;
   margin-right: 2rem;
+  position: relative;
+  top: -11px;
 }
 
 .social-icon i {
@@ -362,7 +364,8 @@ span {
 /*---------- || Contact ----------*/
 
 .contact-form {
-  margin-top: 5rem;
+  margin: 5rem auto;
+  width: 90%;
 }
 
 .form-group {

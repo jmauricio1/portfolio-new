@@ -5,6 +5,14 @@ function Navigation() {
 
   const linkList = ["", "about", "skills", "projects", "contact"];
 
+  let menuWidth = "";
+  if(window.innerWidth <= 414){
+    menuWidth = `${window.innerWidth}px`;
+  }
+  else{
+    menuWidth = "500px";
+  }
+
   function handleNavClick() {
     if (navClicked) {
       setNavClicked(false);
@@ -37,7 +45,7 @@ function Navigation() {
       <ul
         id="nav-menu"
         style={{
-          width: navClicked ? "500px" : "0",
+          width: navClicked ? menuWidth : "0",
           opacity: navClicked ? "1" : "0",
           transition: "1s ease-in-out",
           transitionDelay: navClicked ? "0s" : "0.75s",

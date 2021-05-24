@@ -33,7 +33,6 @@ function ContactForm() {
   function handleSubmit(e) {
     emailjs.send(serviceID, templateID, contactParams, userID).then(
       (response) => {
-        //setSentEmail(true);
         setParams({
           name: "",
           email: "",
@@ -50,7 +49,7 @@ function ContactForm() {
   return (
     <Form className="contact-form">
       <Row className="justify-content-center">
-        <Col md={6}>
+        <Col md={6} xs={12}>
           <FormTextInput
             idName={"firstName"}
             label={"First Name"}
