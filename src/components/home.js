@@ -25,10 +25,10 @@ function Home() {
           style={applyStyle ? letter : null}
           onMouseOver={handleOver}
           onMouseOut={handleOut}
-        >
-          H
-        </span>
-        ello.<br />I'm Josh.
+        ></span>
+        Hello.
+        <br />
+        I'm Josh.
       </h1>
       <Particles
         id="tsparticles"

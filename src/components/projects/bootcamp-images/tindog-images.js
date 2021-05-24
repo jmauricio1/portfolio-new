@@ -6,14 +6,14 @@ function TindogImages(){
     <Row>
           <Col lg={12} className="mb-5">
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/tindog1.png"
               alt="TinDog"
             />
           </Col>
           <Col lg={12} className="mb-5">
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/tindog2.png"
               alt="TinDog"
             />
@@ -21,7 +21,7 @@ function TindogImages(){
           </Col>
           <Col lg={12} className="mb-5">
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/tindog3.png"
               alt="TinDog"
             />

@@ -6,7 +6,7 @@ function AstroImages() {
     <Row className="no-space">
       <Col className="no-space mb-5" lg={12}>
         <img
-          className="contain-full-image"
+          className="full-width"
           alt="Earth tab from the planets page from Astronomical Learning"
           src="/images/al-1.jpg"
         />
@@ -14,7 +14,7 @@ function AstroImages() {
       <Col className="no-space mb-5" lg={12}>
         {" "}
         <img
-          className="contain-full-image"
+          className="full-width"
           alt="Earth tab from the planets page from Astronomical Learning"
           src="/images/al-3.jpg"
         />
@@ -22,7 +22,7 @@ function AstroImages() {
       <Col className="no-space" lg={12}>
         {" "}
         <img
-          className="contain-full-image"
+          className="full-width"
           alt="Earth tab from the planets page from Astronomical Learning"
           src="/images/al-4.jpg"
         />

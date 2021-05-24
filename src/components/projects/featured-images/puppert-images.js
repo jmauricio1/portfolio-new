@@ -8,14 +8,14 @@ function PuppertImages() {
         <img
           src="/images/puppert-1.png"
           alt="Puppert phone view"
-          className="contain-full-image"
+          className="full-width"
         />
       </Col>
       <Col lg={{span: 2, offset: 1}}>
         <img
           src="/images/Puppert-phone.png"
           alt="Puppert phone view"
-          className="contain-full-image phone-top"
+          className="full-width phone-right"
         />
       </Col>
     </Row>

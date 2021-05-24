@@ -80,35 +80,12 @@ section {
   z-index: 1;
 }
 
-.form-control {
-  border: none;
-  border-radius: 0;
-  border-bottom: 3px solid #ced4da;
-}
-
-/*---------- || Home ----------*/
-
-#home {
-  text-align: center;
-  height: 0;
-}
-
-.title {
-  position: relative;
-  text-align: center;
-  z-index: 1;
+.no-space {
+  padding: 0;
   margin: 0;
-  pointer-events: none;
 }
 
-.particles-canvas {
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 0;
-}
+/*---------- || Navigation ---------- */
 
 #navigation {
   position: fixed;
@@ -178,6 +155,41 @@ section {
   text-decoration: none;
 }
 
+/*---------- || Home ----------*/
+
+#home {
+  text-align: center;
+  height: 0;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+  pointer-events: none;
+}
+
+.particles-canvas {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 0;
+}
+
+/* .allow-pointer {
+  pointer-events: all;
+  cursor: context-menu;
+  transition: 0.25s;
+}
+
+.allow-pointer:hover {
+  color: "red";
+  transform: "scaleY(0.5)";
+} */
+
 /*---------- || About ----------*/
 
 #about h2 {
@@ -189,12 +201,57 @@ section {
   margin-top: 0;
 }
 
+.social-icon {
+  font-size: 2.5rem;
+  color: black;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+.social-icon i {
+  transition: 0.2s ease-in-out;
+}
+
+.social-icon:hover i {
+  transform: scale(1.3);
+  color: #0075f2;
+}
+
+.about-image-distortion {
+  position: relative;
+  width: 80.3vw;
+  height: 100vh;
+  z-index: 0;
+  top: -9rem;
+}
+
 /* #about-img {
   position: relative;
   width: 80.3%;
   z-index: 0;
   top: -9rem;
 } */
+
+/*---------- || Skills ----------*/
+
+.p-icon {
+  transition: 0.5s ease-out;
+  /* transform: rotateY(-45deg); */
+}
+
+.p-container{
+  perspective: 30rem;
+  perspective-origin: center;
+  margin-bottom: 5rem;
+}
+
+.p-container .p-icon{
+  transform: rotateY(-30deg);
+}
+
+.p-icon:hover{
+  transform: rotateY(0deg);
+}
 
 /*---------- || Projects ----------*/
 
@@ -276,27 +333,18 @@ span {
   margin-bottom: 0;
 }
 
-/* Ocean */
+/* ---------- Featured & Bootcamp Projects ---------- */
 
 .full-width {
   width: 100%;
 }
 
-.oadk-img {
-  width: 80%;
-}
-
-.no-space {
-  padding: 0;
-  margin: 0;
-}
-
-.phone-top {
+.phone-right {
   position: relative;
   left: -49px;
 }
 
-.phone-bottom {
+.phone-left {
   position: relative;
   left: 49px;
 }
@@ -305,44 +353,13 @@ span {
   padding-bottom: 5rem;
 }
 
-.contain-full-image {
-  width: 100%;
+/* ---------- Ocean and Dexter's Kitchen ---------- */
+
+.oadk-img {
+  width: 80%;
 }
 
-.social-icon {
-  font-size: 2.5rem;
-  color: black;
-  margin: 0;
-  margin-right: 2rem;
-}
-
-.social-icon i {
-  transition: 0.2s ease-in-out;
-}
-
-.social-icon:hover i {
-  transform: scale(1.3);
-  color: #0075f2;
-}
-
-.about-image-distortion {
-  position: relative;
-  width: 80.3vw;
-  height: 100vh;
-  z-index: 0;
-  top: -9rem;
-}
-
-.allow-pointer {
-  pointer-events: all;
-  cursor: context-menu;
-  transition: 0.25s;
-}
-
-.allow-pointer:hover {
-  color: "red";
-  transform: "scaleY(0.5)";
-}
+/*---------- || Contact ----------*/
 
 .contact-form {
   margin-top: 5rem;
@@ -353,21 +370,13 @@ span {
   margin-bottom: 5rem;
 }
 
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #ced4da;
+}
+
 .form-control:focus {
   border-color: #0075f2;
   box-shadow: none;
-}
-
-.p-icon {
-  transition: 0.5s ease-out;
-  transform: rotateY(-45deg);
-}
-
-.p-container{
-  perspective: 1000px;
-  perspective-origin: center;
-}
-
-.p-icon:hover{
-  transform: rotateY(0deg);
 }

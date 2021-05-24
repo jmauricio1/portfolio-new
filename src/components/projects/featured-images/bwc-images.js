@@ -14,7 +14,7 @@ function BwcImages() {
         </Col>
         <Col lg={{span: 2, offset: 1}}>
           <img
-            className="full-width phone-top"
+            className="full-width phone-right"
             src="/images/bwcollexPhone.png"
             alt="The black and white collection initial home page"
           />
@@ -23,7 +23,7 @@ function BwcImages() {
       <Row className="no-space justify-content-end">
         <Col lg={2}>
           <img
-            className="full-width phone-bottom"
+            className="full-width phone-left"
             src="/images/bwc-phone-2.jpg"
             alt="The black and white collection initial home page"
           />

@@ -6,7 +6,7 @@ function SecretsImages(){
     <Row className="no-space">
           <Col lg={6} className="mb-5">
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/secrets-1.png"
               alt="Secrets home page"
             />
@@ -14,7 +14,7 @@ function SecretsImages(){
           <Col lg={6}>
             {" "}
             <img
-              className="contain-full-image"
+              className="full-width"
               src="/images/secrets-2.png"
               alt="Secrets home page"
             />
