@@ -20,7 +20,7 @@ const info = {
         title: "The Black and White Collection",
         link: "https://bwcollex.netlify.app/",
         paragraphs: [
-          "The Black and White collection is a simple selection of black and white images from various photographers and artists on Unsplash. The purpose of this project was to explore with parallax scrolling and create a compose a layout that would sway towards uncommon yet pleasing.",
+          "The Black and White collection is a simple selection of black and white images from various photographers and artists on Unsplash. The purpose of this project was to explore with parallax scrolling and compose a layout that would sway towards uncommon yet pleasing.",
         ],
         tools: "React, HTML, CSS, JavaScript, Netlify",
       },
