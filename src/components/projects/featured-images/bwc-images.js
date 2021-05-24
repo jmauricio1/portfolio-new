@@ -12,7 +12,7 @@ function BwcImages() {
             alt="The black and white collection initial home page"
           />
         </Col>
-        <Col lg={{span: 2, offset: 1}} xs={{span: 8, offset: 0}} className="mb-4">
+        <Col lg={{span: 2, offset: 1}} xs={{span: 8, offset: 0}} md={{span: 6, offset: 0}} className="mb-4">
           <img
             className="full-width phone-right"
             src="/images/bwcollexPhone.png"
@@ -21,7 +21,7 @@ function BwcImages() {
         </Col>
       </Row>
       <Row className="no-space justify-content-end">
-        <Col lg={2} xs={{span: 8}} className="mb-4">
+        <Col lg={2} xs={{span: 8}} md={{span: 6, offset: 0}} className="mb-4">
           <img
             className="full-width phone-left"
             src="/images/bwc-phone-2.jpg"
