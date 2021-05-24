@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import info from "./../../info";
 import Project from "./project";
 import SecretsImages from "./bootcamp-images/secrets-images";
@@ -23,13 +23,11 @@ function AppBreweryProjects() {
           title={projList[0].title}
           paragraphs={projList[0].paragraphs}
         />
-        <Row className="no-space">
-          <img
-            className="full-width"
-            src="/images/keeper-app.png"
-            alt="The Keeper App home page."
-          />
-        </Row>
+        <img
+          className="full-width"
+          src="/images/keeper-app.png"
+          alt="The Keeper App home page."
+        />
       </Container>
       <Container className="project-container">
         <Project

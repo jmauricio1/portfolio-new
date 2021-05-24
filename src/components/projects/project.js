@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 function Project(props) {
   return (
     <Container className="no-space">
-      <Fade right duration={2000}>
+      <Fade bottom duration={2000}>
         <h4>
           <a className="project-link" href={props.link}>
             {props.title}
