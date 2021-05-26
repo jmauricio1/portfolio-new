@@ -179,7 +179,7 @@ section {
   z-index: 0;
 }
 
-/* .allow-pointer {
+.allow-pointer {
   pointer-events: all;
   cursor: context-menu;
   transition: 0.25s;
@@ -188,7 +188,7 @@ section {
 .allow-pointer:hover {
   color: "red";
   transform: "scaleY(0.5)";
-} */
+}
 
 /*---------- || About ----------*/
 

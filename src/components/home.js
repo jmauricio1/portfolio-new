@@ -2,36 +2,56 @@ import React, { useState } from "react";
 import Particles from "react-tsparticles";
 
 function Home() {
-  const [applyStyle, setApplyStyle] = useState(false);
+  const first = 1;
 
-  function handleOver() {
-    setApplyStyle(true);
+  const [applyStyle, setApplyStyle] = useState(0);
+
+  function handleOver(e) {
+    setApplyStyle(e.target.id);
   }
 
-  function handleOut() {
-    setApplyStyle(false);
+  function handleOut(e) {
+    setApplyStyle(0);
   }
 
-  let letter = {
-    color: "red",
-    transform: "scaleY(0.5)",
-  };
+  let letter = {};
+
+  if (applyStyle != 0) {
+    letter = {
+      color: "red",
+      transform: "scaleY(0.5)",
+    };
+  }
 
   let nodeCount = 200;
-  if(window.innerWidth <= 414){
+  if (window.innerWidth <= 414) {
     nodeCount = 100;
   }
+
+  console.log(applyStyle);
 
   return (
     <section id="home">
       <h1 className="title">
         <span
+          id={`${first}`}
           className="allow-pointer"
-          style={applyStyle ? letter : null}
+          style={applyStyle == 1 ? letter : null}
           onMouseOver={handleOver}
           onMouseOut={handleOut}
-        ></span>
-        Hello.
+        >
+          H
+        </span>
+        <span
+          id="2"
+          className="allow-pointer"
+          style={applyStyle == 2 ? letter : null}
+          onMouseOver={handleOver}
+          onMouseOut={handleOut}
+        >
+          e
+        </span>
+        llo.
         <br />
         I'm Josh.
       </h1>
