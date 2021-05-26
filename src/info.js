@@ -22,7 +22,7 @@ const info = {
         paragraphs: [
           "The Black and White collection is a simple selection of black and white images from various photographers and artists on Unsplash. The purpose of this project was to explore with parallax scrolling and compose a layout that would sway towards uncommon yet pleasing.",
         ],
-        tools: "React, HTML, CSS, JavaScript, Netlify",
+        tools: "React, HTML, CSS, JavaScript, Netlify, Adobe XD",
       },
       {
         title: "React Portfolio",
@@ -101,6 +101,93 @@ const info = {
     "React Hooks",
     "Web Design",
   ],
+  skillIcons: [
+    {
+      name: 'js',
+      simpleIconName: 'Javascript',
+      color: '#F7DF1E'
+    },
+    {
+      name: 'cs',
+      simpleIconName: 'Csharp',
+      color: '#239120'
+    },
+    {
+      name: 'cpp',
+      simpleIconName: 'Cplusplus',
+      color: '#00599C'
+    },
+    {
+      name: 'html',
+      simpleIconName: 'Html5',
+      color: '#E34F26'
+    },
+    {
+      name: 'css',
+      simpleIconName: 'CssThree',
+      color: '#1572B6'
+    },
+    {
+      name: 'rjs',
+      simpleIconName: 'ReactJs',
+      color: '#61DAFB'
+    },
+    {
+      name: 'vss',
+      simpleIconName: 'VisualStudio',
+      color: '#5C2D91'
+    },
+    {
+      name: 'vsc',
+      simpleIconName: 'Visualstudiocode',
+      color: '#007ACC'
+    },
+    {
+      name: 'g',
+      simpleIconName: 'Git',
+      color: '#F05032'
+    },
+    {
+      name: 'gh',
+      simpleIconName: 'Github',
+      color: '#181717'
+    },
+    {
+      name: 'msa',
+      simpleIconName: 'Microsoftazure',
+      color: '#0089D6'
+    },
+    {
+      name: 'mssql',
+      simpleIconName: 'Microsoftsqlserver',
+      color: '#CC2927'
+    },
+    {
+      name: 'mdb',
+      simpleIconName: 'Mongodb',
+      color: '#47A248'
+    },
+    {
+      name: 'bs',
+      simpleIconName: 'Bootstrap',
+      color: '#7952B3'
+    },
+    {
+      name: 'jq',
+      simpleIconName: 'Jquery',
+      color: '#0769AD'
+    },
+    {
+      name: 'ndjs',
+      simpleIconName: 'NodeDotJs',
+      color: '#339933'
+    },
+    {
+      name: 'n',
+      simpleIconName: 'Npm',
+      color: '#CB3837'
+    },
+  ]
 };
 
 export default info;

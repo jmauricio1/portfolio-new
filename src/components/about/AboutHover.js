@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import hoverEffect from "hover-effect";
 
-function TheHover() {
+function AboutHover() {
   const container = useRef();
 
   useEffect(() => {
@@ -24,4 +24,4 @@ function TheHover() {
   );
 }
 
-export default TheHover;
+export default AboutHover;

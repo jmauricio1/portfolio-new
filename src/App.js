@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import "./MediaQueries.css";
+import "./styles/App.css";
+import "./styles/MediaQueries.css";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from './components/home';
-import About from './components/about';
-import Skills from './components/skills/skills';
-import Contact from './components/contact';
-import Navigation from './components/navigation';
-import Projects from './components/projects/projects';
-import FeaturedProjects from './components/projects/featured-projects';
-import AppBreweryProjects from './components/projects/app-brewery-projects';
+import Home from './components/Home';
+import About from './components/about/About';
+import Skills from './components/skills/Skills';
+import Contact from './components/Contact';
+import Navigation from './components/Navigation';
+import Projects from './components/projects/Projects';
+import FeaturedProjects from './components/projects/RequiredComponents/FeaturedProjects';
+import AppBreweryProjects from './components/projects/RequiredComponents/AppBreweryProjects';
 
 function App() {
   return (

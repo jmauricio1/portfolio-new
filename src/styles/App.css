@@ -248,11 +248,15 @@ section {
 }
 
 .p-container .p-icon{
-  transform: rotateY(-30deg);
+  transform: rotateY(-35deg);
+  background-color: white;
+  border-radius: 5px;
+  padding: 4%;
 }
 
 .p-icon:hover{
   transform: rotateY(0deg);
+  filter: invert(1);
 }
 
 /*---------- || Projects ----------*/

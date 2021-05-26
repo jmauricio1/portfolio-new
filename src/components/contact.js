@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import ContactForm from "./contact/contact-form";
+import ContactForm from "./contact/ContactForm";
 
 function Contact() {
   return (

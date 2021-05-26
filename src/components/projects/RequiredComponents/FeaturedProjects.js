@@ -1,12 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import AstroImages from "./featured-images/astro-images";
-import BwcImages from "./featured-images/bwc-images";
-import OadkImages from "./featured-images/ocean-images";
-import Project from "./project";
+import AstroImages from "../FeaturedImages/AstroImages";
+import BwcImages from "../FeaturedImages/BwcImages";
+import OadkImages from "../FeaturedImages/OceanImages";
+import PuppertImages from "../FeaturedImages/PuppertImages";
+import Project from "./Project";
 
-import info from "./../../info";
-import PuppertImages from "./featured-images/puppert-images";
+import info from "../../../info";
 
 export default function FeaturedProjects() {
   let projList = info.projects.featured;

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import TheHover from "../the-hover";
-import info from './../info';
-import SocialIcons from "./about/social-icons";
+import AboutHover from "./AboutHover";
+import info from '../../info';
+import SocialIcons from "./SocialIcons";
 
 function About() {
 
@@ -13,7 +13,7 @@ function About() {
         I develop web apps <br /> & software
       </h2>
       {/* <img id="about-img" src="/images/about.jpg" alt="temp" /> */}
-      <TheHover />
+      <AboutHover />
       <Container>
         <h3>About</h3>
         <h4>

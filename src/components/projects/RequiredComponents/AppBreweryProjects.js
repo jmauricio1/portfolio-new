@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import info from "./../../info";
-import Project from "./project";
-import SecretsImages from "./bootcamp-images/secrets-images";
-import TindogImages from "./bootcamp-images/tindog-images";
+import info from "../../../info";
+import Project from "./Project";
+import SecretsImages from "../BootcampImages/SecretsImages";
+import TindogImages from "../BootcampImages/TindogImages";
 
 function AppBreweryProjects() {
   let projList = info.projects.bootcamp;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
-import FormTextInput from "./form-text-input";
+import FormTextInput from "./FormInput";
 import emailjs from "emailjs-com";
 
 const serviceID = process.env.REACT_APP_SERVICE_ID;
