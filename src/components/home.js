@@ -1,59 +1,44 @@
 import React, { useState } from "react";
 import Particles from "react-tsparticles";
+import HomeLetter from './home/HomeLetter';
 
 function Home() {
-  const first = 1;
-
   const [applyStyle, setApplyStyle] = useState(0);
+  const firstWord = ['H', 'e', 'l', 'l', 'o', '.'];
+  const secondWord = ['I', `'`, 'm', ' ', 'J', 'o', 's', 'h', '.'];
 
   function handleOver(e) {
     setApplyStyle(e.target.id);
   }
 
-  function handleOut(e) {
+  function handleOut() {
     setApplyStyle(0);
   }
 
-  let letter = {};
-
-  if (applyStyle != 0) {
-    letter = {
-      color: "red",
+  let letter = {
+    color: "red",
       transform: "scaleY(0.5)",
-    };
-  }
+  };
 
   let nodeCount = 200;
   if (window.innerWidth <= 414) {
     nodeCount = 100;
   }
 
-  console.log(applyStyle);
-
   return (
     <section id="home">
       <h1 className="title">
-        <span
-          id={`${first}`}
-          className="allow-pointer"
-          style={applyStyle == 1 ? letter : null}
-          onMouseOver={handleOver}
-          onMouseOut={handleOut}
-        >
-          H
-        </span>
-        <span
-          id="2"
-          className="allow-pointer"
-          style={applyStyle == 2 ? letter : null}
-          onMouseOver={handleOver}
-          onMouseOut={handleOut}
-        >
-          e
-        </span>
-        llo.
+        {firstWord.map((item, index)=> {
+          return(
+            <HomeLetter letter={item} id={index + 1} selectedNum={applyStyle} style={letter} onMouseOver={handleOver} onMouseOut={handleOut}/>
+          )
+        })}
         <br />
-        I'm Josh.
+        {secondWord.map((item, index)=> {
+          return(
+            <HomeLetter letter={item} id={index + 7} selectedNum={applyStyle} style={letter} onMouseOver={handleOver} onMouseOut={handleOut}/>
+          )
+        })}
       </h1>
       <Particles
         id="tsparticles"
