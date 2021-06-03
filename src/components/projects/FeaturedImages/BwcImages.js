@@ -24,7 +24,7 @@ function BwcImages() {
         <Col lg={2} xs={{span: 8}} md={{span: 6, offset: 0}} className="mb-4">
           <img
             className="full-width phone-left"
-            src="/images/bwc-phone-2.jpg"
+            src="/images/bwc-phone-2.png"
             alt="The black and white collection initial home page"
           />
         </Col>

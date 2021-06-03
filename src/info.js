@@ -35,8 +35,7 @@ const info = {
         title: "Puppert",
         link: "#",
         paragraphs: [
-          `Puppert is a productivity application that tracks the progress of user and team created development projects.`,
-          `I have found that other progress tracking applications are complex and have many features that are not utilized by many users. Puppert is made to have an easy-going user experience while having a comprehensive user interface. While on Puppert, users are able to track the progress of their projects while implementing some Agile methods. This includes the process of creating user stories and sprints.`,
+          `Puppert is a productivity application that tracks the progress of user and team created development projects. I have found that other progress tracking applications are complex and have many features that are not utilized by many users. Puppert, on the other hand, is being made to be simple and have an easy-going user experience while having a comprehensive user interface.`,
           `"We believe in keeping the planning phase quick and simple so that there is more room for your creativity."`
         ]
       },
@@ -44,7 +43,7 @@ const info = {
         title: "Astronomical Learning",
         link: "#",
         paragraphs: [
-          `Astronomical Learning is a website for those interested in all things space who want to learn more about SpaceX and NASA missions and space itself. This project is also an informational system that will allow people of all ages to learn about SpaceX, NASA and space in a variety of ways.`,
+          `Astronomical Learning is a website for those interested in all things space who want to learn more about things beyond Earth. This project is also an informational system that will allow people of all ages to learn about SpaceX, NASA and space in a variety of ways.`,
           `Visitors will be able to see what missions SpaceX and NASA have completed and be able to view various information about each mission. The website will also include other ways of teaching people about what goes into space missions and other aspects of space. Unlike SpaceX’s launch manifest, our product will be able to deliver more detailed information about SpaceX missions and in a format that is more appealing to younger audiences alongside a much larger scope of topics.`
         ]
       }

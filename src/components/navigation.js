@@ -19,15 +19,6 @@ function Navigation() {
     } else {
       setNavClicked(true);
     }
-    handleMenu();
-  }
-
-  function handleMenu() {
-    if (navClicked === true) {
-      console.log("The menu is open. " + navClicked);
-    } else {
-      console.log("The menu is closed. " + navClicked);
-    }
   }
 
   let navLinkAnimation = {

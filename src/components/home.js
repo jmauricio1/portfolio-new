@@ -5,7 +5,7 @@ import HomeLetter from './home/HomeLetter';
 function Home() {
   const [applyStyle, setApplyStyle] = useState(0);
   const firstWord = ['H', 'e', 'l', 'l', 'o', '.'];
-  const secondWord = ['I', `'`, 'm', ' ', 'J', 'o', 's', 'h', '.'];
+  const secondWord = ['I', `'`, 'm', `_`, 'J', 'o', 's', 'h', '.'];
 
   function handleOver(e) {
     setApplyStyle(e.target.id);

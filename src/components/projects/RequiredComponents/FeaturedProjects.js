@@ -46,7 +46,7 @@ export default function FeaturedProjects() {
           src="/images/portfolio.jpg"
         />
       </Container>
-      <Container fluid className="nos-space">
+      <Container fluid className="no-space">
         
       </Container>
       <Container>
