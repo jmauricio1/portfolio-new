@@ -11,6 +11,8 @@ import Projects from './components/projects/Projects';
 import FeaturedProjects from './components/projects/RequiredComponents/FeaturedProjects';
 import AppBreweryProjects from './components/projects/RequiredComponents/AppBreweryProjects';
 
+//Had to manually rename files in GitHub in order for components to be imported.
+
 function App() {
   return (
     <Router>
