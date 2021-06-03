@@ -5,6 +5,7 @@ import BwcImages from "../FeaturedImages/BwcImages";
 import OadkImages from "../FeaturedImages/OceanImages";
 import PuppertImages from "../FeaturedImages/PuppertImages";
 import Project from "./Project";
+import { Fade } from "react-reveal";
 
 import info from "../../../info";
 
@@ -14,8 +15,12 @@ export default function FeaturedProjects() {
   return (
     <section className="section-layout">
       <Container>
-        <h2>Featured</h2>
-        <h3>Client Work</h3>
+        <Fade duration={2000}>
+          <h2>Featured</h2>
+        </Fade>
+        <Fade delay={1000} duration={2000}>
+          <h3>Client Work</h3>
+        </Fade>
         <Project
           link={projList[0].link}
           title={projList[0].title}
@@ -33,7 +38,7 @@ export default function FeaturedProjects() {
           paragraphs={projList[1].paragraphs}
         />
       </Container>
-      <BwcImages/>
+      <BwcImages />
       <Container className="project-container">
         <Project
           link={projList[2].link}
@@ -46,9 +51,7 @@ export default function FeaturedProjects() {
           src="/images/portfolio.jpg"
         />
       </Container>
-      <Container fluid className="no-space">
-        
-      </Container>
+      <Container fluid className="no-space"></Container>
       <Container>
         <Project
           link={projList[3].link}

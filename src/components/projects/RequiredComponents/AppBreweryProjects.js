@@ -4,6 +4,7 @@ import info from "../../../info";
 import Project from "./Project";
 import SecretsImages from "../BootcampImages/SecretsImages";
 import TindogImages from "../BootcampImages/TindogImages";
+import { Fade } from "react-reveal";
 
 function AppBreweryProjects() {
   let projList = info.projects.bootcamp;
@@ -11,8 +12,12 @@ function AppBreweryProjects() {
   return (
     <section className="section-layout">
       <Container className="project-container">
-        <h2>Bootcamp</h2>
-        <h3>The Complete 2021 Web Development Bootcamp</h3>
+        <Fade duration={2000}>
+          <h2>Bootcamp</h2>
+        </Fade>
+        <Fade delay={1000} duration={2000}>
+          <h3>The Complete 2021 Web Development Bootcamp</h3>
+        </Fade>
         <p>
           This bootcamp, through Udemy, is taught by instructor Dr. Angela Yu
           from the App Brewery. There, I was able to sharpen and learn a lot of
